@@ -1,0 +1,11145 @@
+<html><head>
+   
+    <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    
+        <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png">
+<meta name="og:type" content="website">
+<meta name="twitter:card" content="photo">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://animaapp.s3.amazonaws.com/launchpad-static/launchpad.js"></script>
+        <script id="anima-hotspots-script" defer="" src="hotspots.js"></script>
+        <script id="anima-overrides-script" defer="" src="overrides.js"></script>
+        <style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url('https://fonts.googleapis.com/css?family=Wendy+One:400|Lato:400,900,700|Avenir:900');
+.anima-component-wrapper a,
+.anima-screen a {
+    text-decoration: none;
+    display: contents;
+}
+.anima-full-width-a {
+    width: 100%;
+}
+.anima-full-height-a {
+    height: 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+    outline: none;
+}
+.anima-screen *,
+.anima-component-wrapper *{
+    box-sizing: border-box;
+}
+
+.anima-screen div {
+    -webkit-text-size-adjust: none;
+}
+
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.anima-container-center-vertical {
+    align-items: center;
+    height: 100%;
+}
+
+.anima-container-center-horizontal {
+    justify-content: center;
+    width: 100%;
+}
+
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+    pointer-events: auto;
+    flex-shrink: 0;
+}
+
+.anima-component-wrapper,
+.anima-screen {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    word-break: break-word;
+}
+
+.anima-auto-animated div {
+    opacity: 0;
+    position: absolute;
+    --anima-z-index: -1;
+}
+
+.anima-auto-animated .anima-container-center-vertical,
+.anima-auto-animated .anima-container-center-horizontal {
+    opacity: 1;
+}
+
+.anima-overlay {
+position: absolute;
+opacity: 0;
+display: none;
+top: 0;
+width: 100%;
+height: 100%;
+position: fixed;
+}
+
+.anima-animate-appear {
+    opacity: 0;
+    display: block;
+    animation: anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+
+.anima-animate-disappear {
+    opacity: 1;
+    display: block;
+    animation: anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+
+.anima-animate-nodelay {
+    animation-delay: 0s;
+}
+
+@keyframes anima-reveal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.align-self-flex-start {
+    align-self: flex-start;
+}
+.align-self-flex-end {
+    align-self: flex-end;
+}
+.align-self-flex-center {
+    align-self: center;
+}
+.anima-valign-text-middle {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+.anima-valign-text-bottom {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+    pointer-events: none;
+}
+
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+    pointer-events: auto;
+}
+
+.anima-hidden,
+.anima-hidden * {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+    visibility: hidden !important;
+}
+
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 959px) {
+  .x1homepage { 
+    display: none;
+   }
+  .x1homepage-tablet { 
+    display: none;
+   }
+}
+@media screen and (min-width: 960px) and (max-width: 1439px) {
+  .x1homepage { 
+    display: none;
+   }
+  .x1homepage-mobile { 
+    display: none;
+   }
+}
+@media screen and (min-width: 1440px) {
+  .x1homepage-tablet { 
+    display: none;
+   }
+  .x1homepage-mobile { 
+    display: none;
+   }
+}
+/* screen - 1homepage */
+
+.border-class-1 {
+  border: 1px solid transparent;
+}
+.border-class-2 {
+  border: 2px solid var(--grape);
+}
+.border-class-3 {
+  border: 1px solid var(--grape);
+}
+.border-class-4 {
+  border: 2px solid var(--oasis);
+}
+.bp1-anima-animate-enter {
+  animation: bp1-anima-animate-enter-frames 0.40s ease-in-out 0.50s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(25px, 0);
+}
+.bp1-anima-animate-enter1 {
+  animation: bp1-anima-animate-enter1-frames 0.40s ease-in 1.00s 1 normal forwards;
+  display: block;
+opacity: 0;transform: rotate(25deg);
+}
+.bp1-anima-animate-enter2 {
+  animation: bp1-anima-animate-enter2-frames 0.30s ease-in 0.30s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(0, 45px);
+}
+.bp1-anima-animate-enter3 {
+  animation: bp1-anima-animate-enter3-frames 0.50s ease-in-out 0.50s 1 normal forwards;
+  display: block;
+opacity: 0;transform: translate(0, 35px);
+}
+.font-class-1 {
+  font-family: 'Lato', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.font-class-2 {
+  font-family: 'Lato', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.font-class-3 {
+  font-family: 'Wendy One', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.font-class-4 {
+  color: var(--grape);
+  font-family: 'Avenir', Helvetica, Arial, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+}
+.font-class-5 {
+  color: var(--grape);
+  font-family: 'Lato', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+}
+.font-class-6 {
+  color: var(--grape);
+  font-family: "Lato", Helvetica, Arial, serif;
+  font-size: 20px;
+}
+.x1homepage {
+  background-color: var(--azalea);
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/bg-1@1x.png);
+  background-size: 100% 100%;
+  height: 6502px;
+  overflow: hidden;
+  position: relative;
+  width: 1440px;
+}
+.x1homepage .add-to-cart-2P4qUJ {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 336px;
+  position: absolute;
+  text-align: left;
+  top: 4086px;
+  width: 122px;
+}
+.x1homepage .add-to-cart-C61RwL {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 1164px;
+  position: absolute;
+  text-align: center;
+  top: 2773px;
+  width: 154px;
+}
+.x1homepage .add-to-cart-HlKRTo {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 762px;
+  position: absolute;
+  text-align: left;
+  top: 4742px;
+  width: 107px;
+}
+.x1homepage .add-to-cart-J1YQmd {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 1188px;
+  position: absolute;
+  text-align: left;
+  top: 4086px;
+  width: 122px;
+}
+.x1homepage .add-to-cart-QxM5SU {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 1169px;
+  position: absolute;
+  text-align: center;
+  top: 3430px;
+  width: 145px;
+}
+.x1homepage .add-to-cart-VMr6Om {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 336px;
+  position: absolute;
+  text-align: left;
+  top: 3430px;
+  width: 107px;
+}
+.x1homepage .add-to-cart-VkPPtx {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 749px;
+  position: absolute;
+  text-align: center;
+  top: 2774px;
+  width: 133px;
+}
+.x1homepage .add-to-cart-YWzA7M {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 302px;
+  position: absolute;
+  text-align: center;
+  top: 2774px;
+  width: 175px;
+}
+.x1homepage .add-to-cart-a5WPlX {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 336px;
+  position: absolute;
+  text-align: left;
+  top: 4742px;
+  width: 122px;
+}
+.x1homepage .add-to-cart-mzXdH9 {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 747px;
+  position: absolute;
+  text-align: center;
+  top: 3430px;
+  width: 137px;
+}
+.x1homepage .add-to-cart-qr8e7q {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 763px;
+  position: absolute;
+  text-align: left;
+  top: 4086px;
+  width: 128px;
+}
+.x1homepage .cta-3vvDBC {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 410px;
+  width: 206px;
+}
+.x1homepage .cta-VovSfr {
+  background-color: transparent;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 338px;
+  width: 208px;
+}
+.x1homepage .cta-iPe1yZ {
+  background-color: var(--oasis);
+  border-radius: 8px;
+  height: 43px;
+  left: 1067px;
+  position: absolute;
+  top: 60px;
+  width: 106px;
+}
+.x1homepage .cta-nFlIx9 {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 382px;
+  width: 206px;
+}
+.x1homepage .cupcake-3-C61RwL {
+  background-color: transparent;
+  height: 235px;
+  left: 1064px;
+  position: absolute;
+  top: 2334px;
+  width: 223px;
+}
+.x1homepage .ellipse-1-wbHF6n {
+  background-color: transparent;
+  height: 26px;
+  left: 26px;
+  position: absolute;
+  top: 0px;
+  width: 26px;
+}
+.x1homepage .ellipse-2-fsUBdP {
+  background-color: transparent;
+  height: 9px;
+  left: 8px;
+  position: absolute;
+  top: 30px;
+  width: 9px;
+}
+.x1homepage .ellipse-3-fsUBdP {
+  background-color: transparent;
+  height: 9px;
+  left: 26px;
+  position: absolute;
+  top: 30px;
+  width: 9px;
+}
+.x1homepage .footer-C61RwL {
+  background-color: transparent;
+  height: 249px;
+  left: 121px;
+  position: absolute;
+  top: 6162px;
+  width: 1173px;
+}
+.x1homepage .icon-2NGeg1 {
+  background-color: transparent;
+  height: 44px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 52px;
+}
+.x1homepage .image-1-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 240px;
+  left: 124px;
+  position: absolute;
+  top: 971px;
+  width: 430px;
+opacity: 0;transform: translate(0, 45px);
+}
+.x1homepage .image-10-C61RwL {
+  background-color: transparent;
+  height: 244px;
+  left: 651px;
+  position: absolute;
+  top: 4293px;
+  width: 197px;
+}
+.x1homepage .image-11-3vvDBC {
+  background-color: transparent;
+  height: 679px;
+  left: 730px;
+  position: absolute;
+  top: 83px;
+  width: 494px;
+}
+.x1homepage .image-2-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 253px;
+  left: 147px;
+  position: absolute;
+  top: 1247px;
+  width: 396px;
+opacity: 0;transform: translate(0, 35px);
+}
+.x1homepage .image-3-C61RwL {
+  background-color: transparent;
+  height: 244px;
+  left: 222px;
+  position: absolute;
+  top: 2980px;
+  width: 203px;
+}
+.x1homepage .image-4-C61RwL {
+  background-color: transparent;
+  height: 244px;
+  left: 641px;
+  position: absolute;
+  top: 2980px;
+  width: 217px;
+}
+.x1homepage .image-5-C61RwL {
+  background-color: transparent;
+  height: 244px;
+  left: 1080px;
+  position: absolute;
+  top: 2980px;
+  width: 192px;
+}
+.x1homepage .image-6-C61RwL {
+  background-color: transparent;
+  height: 244px;
+  left: 222px;
+  position: absolute;
+  top: 3637px;
+  width: 202px;
+}
+.x1homepage .image-7-C61RwL {
+  background-color: transparent;
+  height: 244px;
+  left: 649px;
+  position: absolute;
+  top: 3637px;
+  width: 203px;
+}
+.x1homepage .image-8-C61RwL {
+  background-color: transparent;
+  height: 243px;
+  left: 1066px;
+  position: absolute;
+  top: 3638px;
+  width: 218px;
+}
+.x1homepage .image-9-C61RwL {
+  background-color: transparent;
+  height: 244px;
+  left: 223px;
+  position: absolute;
+  top: 4293px;
+  width: 200px;
+}
+.x1homepage .image-95-C61RwL {
+  background-color: transparent;
+  display: block;
+  height: 711px;
+  left: 870px;
+  position: absolute;
+  top: 121px;
+  width: 532px;
+opacity: 0;transform: rotate(25deg);
+}
+.x1homepage .image-97-C61RwL {
+  background-color: transparent;
+  height: 229px;
+  left: 638px;
+  position: absolute;
+  top: 2329px;
+  width: 223px;
+}
+.x1homepage .minipartyc-akelarge-2-C61RwL {
+  background-color: transparent;
+  height: 230px;
+  left: 223px;
+  position: absolute;
+  top: 2339px;
+  width: 201px;
+}
+.x1homepage .minus-2P4qUJ {
+  background-color: transparent;
+  height: 2px;
+  left: 167px;
+  position: absolute;
+  top: 4094px;
+  width: 9px;
+}
+.x1homepage .minus-C61RwL {
+  background-color: transparent;
+  height: 2px;
+  left: 1019px;
+  position: absolute;
+  top: 2782px;
+  width: 9px;
+}
+.x1homepage .minus-HlKRTo {
+  background-color: transparent;
+  height: 2px;
+  left: 593px;
+  position: absolute;
+  top: 4750px;
+  width: 9px;
+}
+.x1homepage .minus-J1YQmd {
+  background-color: transparent;
+  height: 2px;
+  left: 1019px;
+  position: absolute;
+  top: 4094px;
+  width: 9px;
+}
+.x1homepage .minus-QxM5SU {
+  background-color: transparent;
+  height: 2px;
+  left: 1019px;
+  position: absolute;
+  top: 3438px;
+  width: 9px;
+}
+.x1homepage .minus-VMr6Om {
+  background-color: transparent;
+  height: 2px;
+  left: 167px;
+  position: absolute;
+  top: 3438px;
+  width: 9px;
+}
+.x1homepage .minus-VkPPtx {
+  background-color: transparent;
+  height: 2px;
+  left: 593px;
+  position: absolute;
+  top: 2782px;
+  width: 9px;
+}
+.x1homepage .minus-YWzA7M {
+  background-color: transparent;
+  height: 2px;
+  left: 167px;
+  position: absolute;
+  top: 2782px;
+  width: 9px;
+}
+.x1homepage .minus-a5WPlX {
+  background-color: transparent;
+  height: 2px;
+  left: 167px;
+  position: absolute;
+  top: 4750px;
+  width: 9px;
+}
+.x1homepage .minus-mzXdH9 {
+  background-color: transparent;
+  height: 2px;
+  left: 593px;
+  position: absolute;
+  top: 3438px;
+  width: 9px;
+}
+.x1homepage .minus-qr8e7q {
+  background-color: transparent;
+  height: 2px;
+  left: 594px;
+  position: absolute;
+  top: 4094px;
+  width: 9px;
+}
+.x1homepage .miss-cupcake-C61RwL {
+  background-color: transparent;
+  height: 425px;
+  left: 126px;
+  position: absolute;
+  top: 184px;
+  width: 634px;
+}
+.x1homepage .once-upon-a-time-C61RwL {
+  background-color: transparent;
+  height: 762px;
+  left: 121px;
+  position: absolute;
+  top: 5226px;
+  width: 1224px;
+}
+.x1homepage .our-story-C61RwL {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 18px;
+  height: auto;
+  left: 112px;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: 29px;
+  transition: all 0.2s ease;
+  width: 103px;
+}
+.x1homepage .our-story-C61RwL:hover {
+
+transform: scale(1.1);
+}
+.x1homepage .our-story-FflzRv {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 27px;
+  position: absolute;
+  text-align: center;
+  top: 13px;
+  width: 155px;
+}
+.x1homepage .plus-2P4qUJ {
+  background-color: transparent;
+  height: 10px;
+  left: 234px;
+  position: absolute;
+  top: 4090px;
+  width: 9px;
+}
+.x1homepage .plus-C61RwL {
+  background-color: transparent;
+  height: 10px;
+  left: 1086px;
+  position: absolute;
+  top: 2778px;
+  width: 9px;
+}
+.x1homepage .plus-HlKRTo {
+  background-color: transparent;
+  height: 10px;
+  left: 660px;
+  position: absolute;
+  top: 4746px;
+  width: 9px;
+}
+.x1homepage .plus-J1YQmd {
+  background-color: transparent;
+  height: 10px;
+  left: 1086px;
+  position: absolute;
+  top: 4090px;
+  width: 9px;
+}
+.x1homepage .plus-QxM5SU {
+  background-color: transparent;
+  height: 10px;
+  left: 1086px;
+  position: absolute;
+  top: 3434px;
+  width: 9px;
+}
+.x1homepage .plus-VMr6Om {
+  background-color: transparent;
+  height: 10px;
+  left: 234px;
+  position: absolute;
+  top: 3434px;
+  width: 9px;
+}
+.x1homepage .plus-VkPPtx {
+  background-color: transparent;
+  height: 10px;
+  left: 660px;
+  position: absolute;
+  top: 2778px;
+  width: 9px;
+}
+.x1homepage .plus-YWzA7M {
+  background-color: transparent;
+  height: 10px;
+  left: 234px;
+  position: absolute;
+  top: 2778px;
+  width: 9px;
+}
+.x1homepage .plus-a5WPlX {
+  background-color: transparent;
+  height: 10px;
+  left: 234px;
+  position: absolute;
+  top: 4746px;
+  width: 9px;
+}
+.x1homepage .plus-mzXdH9 {
+  background-color: transparent;
+  height: 10px;
+  left: 660px;
+  position: absolute;
+  top: 3434px;
+  width: 9px;
+}
+.x1homepage .plus-qr8e7q {
+  background-color: transparent;
+  height: 10px;
+  left: 661px;
+  position: absolute;
+  top: 4090px;
+  width: 9px;
+}
+.x1homepage .rectangle-1-00LGpa {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 155px;
+  position: absolute;
+  top: 4729px;
+  width: 100px;
+}
+.x1homepage .rectangle-1-08AYX9 {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 206px;
+}
+.x1homepage .rectangle-1-2P4qUJ {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 711px;
+  position: absolute;
+  top: 3417px;
+  width: 206px;
+}
+.x1homepage .rectangle-1-3kIbHG {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 582px;
+  position: absolute;
+  top: 4073px;
+  width: 100px;
+}
+.x1homepage .rectangle-1-C61RwL {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 1137px;
+  position: absolute;
+  top: 2761px;
+  width: 206px;
+}
+.x1homepage .rectangle-1-HlKRTo {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 285px;
+  position: absolute;
+  top: 4073px;
+  width: 206px;
+}
+.x1homepage .rectangle-1-J1YQmd {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 1137px;
+  position: absolute;
+  top: 3417px;
+  width: 206px;
+}
+.x1homepage .rectangle-1-MGnoC8 {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 155px;
+  position: absolute;
+  top: 2761px;
+  width: 100px;
+}
+.x1homepage .rectangle-1-QL5zbd {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 581px;
+  position: absolute;
+  top: 4729px;
+  width: 100px;
+}
+.x1homepage .rectangle-1-QxM5SU {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 155px;
+  position: absolute;
+  top: 3417px;
+  width: 100px;
+}
+.x1homepage .rectangle-1-R7WrHk {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 1007px;
+  position: absolute;
+  top: 4073px;
+  width: 100px;
+}
+.x1homepage .rectangle-1-VMr6Om {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 1007px;
+  position: absolute;
+  top: 2761px;
+  width: 100px;
+}
+.x1homepage .rectangle-1-VkPPtx {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 155px;
+  position: absolute;
+  top: 4073px;
+  width: 100px;
+}
+.x1homepage .rectangle-1-YWzA7M {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 712px;
+  position: absolute;
+  top: 4073px;
+  width: 206px;
+}
+.x1homepage .rectangle-1-a5WPlX {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 1007px;
+  position: absolute;
+  top: 3417px;
+  width: 100px;
+}
+.x1homepage .rectangle-1-a73nmY {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 1137px;
+  position: absolute;
+  top: 4073px;
+  width: 206px;
+}
+.x1homepage .rectangle-1-dMQSMw {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 285px;
+  position: absolute;
+  top: 2761px;
+  width: 206px;
+}
+.x1homepage .rectangle-1-eCxQ2N {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 581px;
+  position: absolute;
+  top: 2761px;
+  width: 100px;
+}
+.x1homepage .rectangle-1-iPe1yZ {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 641px;
+  position: absolute;
+  top: 60px;
+  width: 394px;
+}
+.x1homepage .rectangle-1-mzXdH9 {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 285px;
+  position: absolute;
+  top: 3417px;
+  width: 206px;
+}
+.x1homepage .rectangle-1-qr8e7q {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 581px;
+  position: absolute;
+  top: 3417px;
+  width: 100px;
+}
+.x1homepage .rectangle-1-rxvq3k {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 285px;
+  position: absolute;
+  top: 4729px;
+  width: 206px;
+}
+.x1homepage .rectangle-1-rzkej8 {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 711px;
+  position: absolute;
+  top: 2761px;
+  width: 206px;
+}
+.x1homepage .rectangle-1-x5xjB4 {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 711px;
+  position: absolute;
+  top: 4729px;
+  width: 206px;
+}
+.x1homepage .send-gOWzxD {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 32px;
+  position: absolute;
+  text-align: left;
+  top: 12px;
+  width: 45px;
+}
+.x1homepage .shop-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: 43px;
+  position: absolute;
+  text-align: left;
+  top: 29px;
+  width: 65px;
+}
+.x1homepage .shop-now-MkKneo {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 33px;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  width: 143px;
+}
+.x1homepage .shopping-cart-C61RwL {
+  background-color: transparent;
+  height: 44px;
+  left: 1350px;
+  position: absolute;
+  top: 16px;
+  width: 52px;
+}
+.x1homepage .simple-sweet-life-C61RwL {
+  background-color: transparent;
+  height: 381px;
+  left: 733px;
+  position: absolute;
+  top: 1071px;
+  width: 642px;
+}
+.x1homepage .subtitle-2P4qUJ {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 169px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 3995px;
+  width: 311px;
+}
+.x1homepage .subtitle-3vvDBC {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 18px;
+  height: auto;
+  left: 0px;
+  line-height: 26px;
+  position: absolute;
+  text-align: left;
+  top: 294px;
+  width: 608px;
+}
+.x1homepage .subtitle-6Hvcgn {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 714px;
+  line-height: 48px;
+  position: absolute;
+  text-align: left;
+  top: 201px;
+  white-space: nowrap;
+  width: 148px;
+}
+.x1homepage .subtitle-6UujYQ {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 528px;
+  line-height: 48px;
+  position: absolute;
+  text-align: left;
+  top: 200px;
+  white-space: nowrap;
+  width: 188px;
+}
+.x1homepage .subtitle-C61RwL {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 1021px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 2683px;
+  width: 311px;
+}
+.x1homepage .subtitle-CMvW9s {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 641px;
+  line-height: 30px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+.x1homepage .subtitle-HlKRTo {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 595px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 4651px;
+  width: 311px;
+}
+.x1homepage .subtitle-J1YQmd {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 1017px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 3995px;
+  width: 319px;
+}
+.x1homepage .subtitle-KHn6Qc {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 274px;
+  line-height: 48px;
+  position: absolute;
+  text-align: left;
+  top: 200px;
+  white-space: nowrap;
+  width: 218px;
+}
+.x1homepage .subtitle-QxM5SU {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 1021px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 3339px;
+  width: 311px;
+}
+.x1homepage .subtitle-VMr6Om {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 169px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 3339px;
+  width: 311px;
+}
+.x1homepage .subtitle-VkPPtx {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 595px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 2683px;
+  width: 311px;
+}
+.x1homepage .subtitle-VovSfr {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 18px;
+  height: auto;
+  left: 0px;
+  line-height: 26px;
+  position: absolute;
+  text-align: left;
+  top: 222px;
+  width: 519px;
+}
+.x1homepage .subtitle-YWzA7M {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 172px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 2683px;
+  width: 305px;
+}
+.x1homepage .subtitle-Yl6O4v {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 899px;
+  line-height: 48px;
+  position: absolute;
+  text-align: left;
+  top: 201px;
+  white-space: nowrap;
+  width: 129px;
+}
+.x1homepage .subtitle-a5WPlX {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 169px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 4651px;
+  width: 311px;
+}
+.x1homepage .subtitle-edsI20 {
+  background-color: transparent;
+  border: 0;
+  color: var(--oasis);
+  font-size: 16px;
+  height: 32px;
+  left: 673px;
+  line-height: 30px;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: 66px;
+  white-space: nowrap;
+  width: 352px;
+}
+.x1homepage .subtitle-edsI20::placeholder {
+  color: rgba(253,239,209,0.6);
+}
+.x1homepage .subtitle-iPe1yZ {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 321px;
+  line-height: 30px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 51px;
+}
+.x1homepage .subtitle-mzXdH9 {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 595px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 3339px;
+  width: 311px;
+}
+.x1homepage .subtitle-nFlIx9 {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 18px;
+  height: auto;
+  left: 0px;
+  line-height: 26px;
+  position: absolute;
+  text-align: left;
+  top: 292px;
+  width: 521px;
+}
+.x1homepage .subtitle-qr8e7q {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 596px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 3995px;
+  width: 311px;
+}
+.x1homepage .subtitle-ur51bv {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 321px;
+  line-height: 48px;
+  position: absolute;
+  text-align: left;
+  top: 39px;
+  white-space: nowrap;
+  width: 99px;
+}
+.x1homepage .subtitle-wlMi8f {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 321px;
+  line-height: 48px;
+  position: absolute;
+  text-align: left;
+  top: 90px;
+  white-space: nowrap;
+  width: 165px;
+}
+.x1homepage .title-2P4qUJ {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 1020px;
+  position: absolute;
+  text-align: center;
+  top: 3271px;
+  width: 312px;
+}
+.x1homepage .title-3kIbHG {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 207px;
+  position: absolute;
+  text-align: center;
+  top: 2615px;
+  width: 235px;
+}
+.x1homepage .title-3vvDBC {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 120px;
+  height: auto;
+  left: 0px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 586px;
+}
+.x1homepage .title-C61RwL {
+  background-color: transparent;
+  color: var(--grape);
+  display: block;
+  font-size: 90px;
+  height: auto;
+  left: 124px;
+  position: absolute;
+  text-align: left;
+  top: 1955px;
+  width: 663px;
+opacity: 0;transform: translate(25px, 0);
+}
+.x1homepage .title-HlKRTo {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 160px;
+  position: absolute;
+  text-align: center;
+  top: 4583px;
+  width: 328px;
+}
+.x1homepage .title-J1YQmd {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 563px;
+  position: absolute;
+  text-align: center;
+  top: 3927px;
+  width: 377px;
+}
+.x1homepage .title-QxM5SU {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 594px;
+  position: absolute;
+  text-align: center;
+  top: 3271px;
+  width: 312px;
+}
+.x1homepage .title-VMr6Om {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 1021px;
+  position: absolute;
+  text-align: center;
+  top: 2615px;
+  width: 311px;
+}
+.x1homepage .title-VkPPtx {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 595px;
+  position: absolute;
+  text-align: center;
+  top: 4583px;
+  width: 311px;
+}
+.x1homepage .title-VovSfr {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 90px;
+  height: auto;
+  left: 0px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 642px;
+}
+.x1homepage .title-YWzA7M {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 632px;
+  position: absolute;
+  text-align: center;
+  top: 2615px;
+  width: 236px;
+}
+.x1homepage .title-a5WPlX {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 1007px;
+  position: absolute;
+  text-align: center;
+  top: 3927px;
+  width: 338px;
+}
+.x1homepage .title-iPe1yZ {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 32px;
+  height: auto;
+  left: 0px;
+  position: absolute;
+  text-align: left;
+  top: 4px;
+  width: 133px;
+}
+.x1homepage .title-mzXdH9 {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 156px;
+  position: absolute;
+  text-align: center;
+  top: 3271px;
+  width: 337px;
+}
+.x1homepage .title-nFlIx9 {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 120px;
+  height: auto;
+  left: 0px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 634px;
+}
+.x1homepage .title-qr8e7q {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 176px;
+  position: absolute;
+  text-align: center;
+  top: 3927px;
+  width: 297px;
+}
+.x1homepage .trolley-icon-wbHF6n {
+  background-color: transparent;
+  height: 40px;
+  left: 0px;
+  position: absolute;
+  top: 5px;
+  width: 38px;
+}
+.x1homepage .vector-3-fsUBdP {
+  background-color: transparent;
+  height: 17px;
+  left: 7px;
+  position: absolute;
+  top: 5px;
+  width: 32px;
+}
+.x1homepage .vector-4-fsUBdP {
+  background-color: transparent;
+  height: 29px;
+  left: 0px;
+  position: absolute;
+  top: -1px;
+  width: 34px;
+}
+.x1homepage .why-miss-cupcake-08AYX9 {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 0px;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  width: 208px;
+}
+.x1homepage .why-miss-cupcake-C61RwL {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 18px;
+  height: auto;
+  left: 219px;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: 29px;
+  transition: all 0.2s ease;
+  width: 172px;
+}
+.x1homepage .why-miss-cupcake-C61RwL:hover {
+
+transform: scale(1.1);
+}
+.x1homepage .x-iPe1yZ {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 256px;
+  position: absolute;
+  text-align: left;
+  top: 213px;
+  width: auto;
+}
+.x1homepage .x0-2P4qUJ {
+  background-color: transparent;
+  height: auto;
+  left: 626px;
+  position: absolute;
+  text-align: left;
+  top: 4083px;
+  width: 15px;
+}
+.x1homepage .x0-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: 199px;
+  position: absolute;
+  text-align: left;
+  top: 3427px;
+  width: 15px;
+}
+.x1homepage .x0-J1YQmd {
+  background-color: transparent;
+  height: auto;
+  left: 199px;
+  position: absolute;
+  text-align: left;
+  top: 4739px;
+  width: 15px;
+}
+.x1homepage .x0-QxM5SU {
+  background-color: transparent;
+  height: auto;
+  left: 199px;
+  position: absolute;
+  text-align: left;
+  top: 4083px;
+  width: 15px;
+}
+.x1homepage .x0-VMr6Om {
+  background-color: transparent;
+  height: auto;
+  left: 625px;
+  position: absolute;
+  text-align: left;
+  top: 3427px;
+  width: 15px;
+}
+.x1homepage .x0-a5WPlX {
+  background-color: transparent;
+  height: auto;
+  left: 625px;
+  position: absolute;
+  text-align: left;
+  top: 4739px;
+  width: 15px;
+}
+.x1homepage .x0-mzXdH9 {
+  background-color: transparent;
+  height: auto;
+  left: 1051px;
+  position: absolute;
+  text-align: left;
+  top: 3427px;
+  width: 15px;
+}
+.x1homepage .x0-qr8e7q {
+  background-color: transparent;
+  height: auto;
+  left: 1051px;
+  position: absolute;
+  text-align: left;
+  top: 4083px;
+  width: 15px;
+}
+.x1homepage .x1-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: 199px;
+  position: absolute;
+  text-align: left;
+  top: 2771px;
+  width: 15px;
+}
+.x1homepage .x2-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: 1051px;
+  position: absolute;
+  text-align: left;
+  top: 2771px;
+  width: 15px;
+}
+.x1homepage .x3-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: 625px;
+  position: absolute;
+  text-align: left;
+  top: 2771px;
+  width: 15px;
+}
+.x1homepage .x8-wbHF6n {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 14px;
+  height: auto;
+  left: 35px;
+  position: absolute;
+  text-align: left;
+  top: 4px;
+  width: 10px;
+}
+:root {
+  --azalea: rgba(247,207,218,1.0);
+  --corn-field: rgba(251,250,201,1.0);
+  --corn-field-2: rgba(251,250,202,1.0);
+  --grape: rgba(100,44,153,1.0);
+  --oasis: rgba(253,239,209,1.0);
+  --oasis-2: rgba(254,239,208,1.0);
+  --papaya-whip: rgba(252,239,210,1.0);
+  --watusi: rgba(250,224,207,1.0);
+}
+@keyframes bp1-anima-animate-enter-frames {
+
+from{opacity: 0;transform: translate(25px, 0);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes bp1-anima-animate-enter1-frames {
+
+from{opacity: 0;transform: rotate(25deg);}
+to{opacity: 1;transform: rotate(0);}
+}
+@keyframes bp1-anima-animate-enter2-frames {
+
+from{opacity: 0;transform: translate(0, 45px);}
+to{opacity: 1;transform: translate(0,0);}
+}
+@keyframes bp1-anima-animate-enter3-frames {
+
+from{opacity: 0;transform: translate(0, 35px);}
+to{opacity: 1;transform: translate(0,0);}
+}
+/* screen - 1homepage-mobile */
+
+.border-class-1 {
+  border: 1px solid transparent;
+}
+.border-class-2 {
+  border: 2px solid var(--grape);
+}
+.border-class-3 {
+  border: 1px solid var(--grape);
+}
+.border-class-4 {
+  border: 2px solid var(--oasis);
+}
+.font-class-1 {
+  font-family: 'Lato', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.font-class-2 {
+  font-family: 'Lato', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.font-class-3 {
+  font-family: 'Wendy One', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.font-class-4 {
+  color: var(--grape);
+  font-family: 'Avenir', Helvetica, Arial, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+}
+.font-class-5 {
+  color: var(--grape);
+  font-family: 'Lato', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+}
+.font-class-6 {
+  color: var(--grape);
+  font-family: "Lato", Helvetica, Arial, serif;
+  font-size: 20px;
+}
+.x1homepage-mobile {
+  background-color: var(--azalea);
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/bg@1x.png);
+  background-size: 100% 100%;
+  height: 9660px;
+  overflow: hidden;
+  position: relative;
+  width: 375px;
+}
+.x1homepage-mobile .add-to-cart-06dsNt {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 160px;
+  position: absolute;
+  text-align: center;
+  top: 5928px;
+  width: 149px;
+}
+.x1homepage-mobile .add-to-cart-0vHbSB {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 160px;
+  position: absolute;
+  text-align: center;
+  top: 1767px;
+  width: 149px;
+}
+.x1homepage-mobile .add-to-cart-CrOrZL {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 157px;
+  position: absolute;
+  text-align: center;
+  top: 3326px;
+  width: 155px;
+}
+.x1homepage-mobile .add-to-cart-IIGSqc {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 160px;
+  position: absolute;
+  text-align: center;
+  top: 5407px;
+  width: 149px;
+}
+.x1homepage-mobile .add-to-cart-IXtyn7 {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 160px;
+  position: absolute;
+  text-align: center;
+  top: 3846px;
+  width: 149px;
+}
+.x1homepage-mobile .add-to-cart-Lfp2zP {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 164px;
+  position: absolute;
+  text-align: center;
+  top: 2806px;
+  width: 141px;
+}
+.x1homepage-mobile .add-to-cart-QdWehx {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 149px;
+  position: absolute;
+  text-align: center;
+  top: 2287px;
+  width: 171px;
+}
+.x1homepage-mobile .add-to-cart-ZtbLXy {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 160px;
+  position: absolute;
+  text-align: center;
+  top: 4887px;
+  width: 149px;
+}
+.x1homepage-mobile .add-to-cart-oLXoxA {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 163px;
+  position: absolute;
+  text-align: center;
+  top: 727px;
+  width: 143px;
+}
+.x1homepage-mobile .add-to-cart-x73zuD {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 158px;
+  position: absolute;
+  text-align: center;
+  top: 1246px;
+  width: 153px;
+}
+.x1homepage-mobile .add-to-cart-yJmwS0 {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 160px;
+  position: absolute;
+  text-align: center;
+  top: 4366px;
+  width: 149px;
+}
+.x1homepage-mobile .cta-FVTpyx {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 323px;
+  width: 206px;
+}
+.x1homepage-mobile .cta-nFlIx9 {
+  background-color: transparent;
+  height: 43px;
+  left: 2px;
+  position: absolute;
+  top: 271px;
+  width: 206px;
+}
+.x1homepage-mobile .cupcake-1-oLXoxA {
+  background-color: transparent;
+  height: 208px;
+  left: 77px;
+  position: absolute;
+  top: 315px;
+  width: 182px;
+}
+.x1homepage-mobile .cupcake-2-oLXoxA {
+  background-color: transparent;
+  height: 185px;
+  left: 78px;
+  position: absolute;
+  top: 857px;
+  width: 180px;
+}
+.x1homepage-mobile .cupcake-3-oLXoxA {
+  background-color: transparent;
+  height: 189px;
+  left: 79px;
+  position: absolute;
+  top: 1373px;
+  width: 179px;
+}
+.x1homepage-mobile .cupcakes-C61RwL {
+  background-color: transparent;
+  height: 5958px;
+  left: 20px;
+  position: absolute;
+  top: 1850px;
+  width: 351px;
+}
+.x1homepage-mobile .ellipse-1-2NGeg1 {
+  background-color: transparent;
+  height: 20px;
+  left: 14px;
+  position: absolute;
+  top: -0px;
+  width: 20px;
+}
+.x1homepage-mobile .ellipse-2-2NGeg1 {
+  background-color: transparent;
+  height: 8px;
+  left: 6px;
+  position: absolute;
+  top: 28px;
+  width: 8px;
+}
+.x1homepage-mobile .ellipse-3-2NGeg1 {
+  background-color: transparent;
+  height: 8px;
+  left: 20px;
+  position: absolute;
+  top: 28px;
+  width: 8px;
+}
+.x1homepage-mobile .footer-C61RwL {
+  background-color: transparent;
+  height: 709px;
+  left: 23px;
+  position: absolute;
+  top: 8884px;
+  width: 335px;
+}
+.x1homepage-mobile .group-28-oLXoxA {
+  background-color: transparent;
+  height: 177px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 351px;
+}
+.x1homepage-mobile .group-70-iPe1yZ {
+  background-color: transparent;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/rectangle-1@2x.png);
+  background-size: 100% 100%;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 249px;
+  width: 335px;
+}
+.x1homepage-mobile .image-10-oLXoxA {
+  background-color: transparent;
+  height: 202px;
+  left: 87px;
+  position: absolute;
+  top: 5521px;
+  width: 163px;
+}
+.x1homepage-mobile .image-3-oLXoxA {
+  background-color: transparent;
+  height: 215px;
+  left: 79px;
+  position: absolute;
+  top: 1866px;
+  width: 179px;
+}
+.x1homepage-mobile .image-4-oLXoxA {
+  background-color: transparent;
+  height: 202px;
+  left: 78px;
+  position: absolute;
+  top: 2398px;
+  width: 180px;
+}
+.x1homepage-mobile .image-5-oLXoxA {
+  background-color: transparent;
+  height: 211px;
+  left: 79px;
+  position: absolute;
+  top: 2916px;
+  width: 166px;
+}
+.x1homepage-mobile .image-56-C61RwL {
+  background-color: transparent;
+  height: 356px;
+  left: 82px;
+  position: absolute;
+  top: 489px;
+  width: 266px;
+}
+.x1homepage-mobile .image-57-C61RwL {
+  background-color: transparent;
+  height: 372px;
+  left: 43px;
+  position: absolute;
+  top: 1356px;
+  width: 301px;
+}
+.x1homepage-mobile .image-58-3vvDBC {
+  background-color: transparent;
+  height: 340px;
+  left: 54px;
+  position: absolute;
+  top: 470px;
+  width: 248px;
+}
+.x1homepage-mobile .image-6-oLXoxA {
+  background-color: transparent;
+  height: 202px;
+  left: 85px;
+  position: absolute;
+  top: 3439px;
+  width: 167px;
+}
+.x1homepage-mobile .image-7-oLXoxA {
+  background-color: transparent;
+  height: 199px;
+  left: 85px;
+  position: absolute;
+  top: 3962px;
+  width: 166px;
+}
+.x1homepage-mobile .image-8-oLXoxA {
+  background-color: transparent;
+  height: 202px;
+  left: 78px;
+  position: absolute;
+  top: 4480px;
+  width: 181px;
+}
+.x1homepage-mobile .image-9-oLXoxA {
+  background-color: transparent;
+  height: 204px;
+  left: 85px;
+  position: absolute;
+  top: 4998px;
+  width: 167px;
+}
+.x1homepage-mobile .minus-06dsNt {
+  background-color: transparent;
+  height: 2px;
+  left: 12px;
+  position: absolute;
+  top: 5936px;
+  width: 9px;
+}
+.x1homepage-mobile .minus-0vHbSB {
+  background-color: transparent;
+  height: 2px;
+  left: 12px;
+  position: absolute;
+  top: 1775px;
+  width: 9px;
+}
+.x1homepage-mobile .minus-CrOrZL {
+  background-color: transparent;
+  height: 2px;
+  left: 12px;
+  position: absolute;
+  top: 3334px;
+  width: 9px;
+}
+.x1homepage-mobile .minus-IIGSqc {
+  background-color: transparent;
+  height: 2px;
+  left: 12px;
+  position: absolute;
+  top: 5415px;
+  width: 9px;
+}
+.x1homepage-mobile .minus-IXtyn7 {
+  background-color: transparent;
+  height: 2px;
+  left: 12px;
+  position: absolute;
+  top: 3854px;
+  width: 9px;
+}
+.x1homepage-mobile .minus-Lfp2zP {
+  background-color: transparent;
+  height: 2px;
+  left: 12px;
+  position: absolute;
+  top: 2814px;
+  width: 9px;
+}
+.x1homepage-mobile .minus-QdWehx {
+  background-color: transparent;
+  height: 2px;
+  left: 12px;
+  position: absolute;
+  top: 2295px;
+  width: 9px;
+}
+.x1homepage-mobile .minus-ZtbLXy {
+  background-color: transparent;
+  height: 2px;
+  left: 12px;
+  position: absolute;
+  top: 4895px;
+  width: 9px;
+}
+.x1homepage-mobile .minus-oLXoxA {
+  background-color: transparent;
+  height: 2px;
+  left: 12px;
+  position: absolute;
+  top: 735px;
+  width: 9px;
+}
+.x1homepage-mobile .minus-x73zuD {
+  background-color: transparent;
+  height: 2px;
+  left: 12px;
+  position: absolute;
+  top: 1254px;
+  width: 9px;
+}
+.x1homepage-mobile .minus-yJmwS0 {
+  background-color: transparent;
+  height: 2px;
+  left: 12px;
+  position: absolute;
+  top: 4374px;
+  width: 9px;
+}
+.x1homepage-mobile .miss-cupcake-C61RwL {
+  background-color: transparent;
+  height: 314px;
+  left: 19px;
+  position: absolute;
+  top: 128px;
+  width: 338px;
+}
+.x1homepage-mobile .once-upon-a-time-C61RwL {
+  background-color: transparent;
+  height: 810px;
+  left: 21px;
+  position: absolute;
+  top: 8020px;
+  width: 338px;
+}
+.x1homepage-mobile .our-story-3vvDBC {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 35px;
+  position: absolute;
+  text-align: center;
+  top: 365px;
+  width: 139px;
+}
+.x1homepage-mobile .plus-06dsNt {
+  background-color: transparent;
+  height: 10px;
+  left: 79px;
+  position: absolute;
+  top: 5932px;
+  width: 9px;
+}
+.x1homepage-mobile .plus-0vHbSB {
+  background-color: transparent;
+  height: 10px;
+  left: 79px;
+  position: absolute;
+  top: 1771px;
+  width: 9px;
+}
+.x1homepage-mobile .plus-CrOrZL {
+  background-color: transparent;
+  height: 10px;
+  left: 79px;
+  position: absolute;
+  top: 3330px;
+  width: 9px;
+}
+.x1homepage-mobile .plus-IIGSqc {
+  background-color: transparent;
+  height: 10px;
+  left: 79px;
+  position: absolute;
+  top: 5411px;
+  width: 9px;
+}
+.x1homepage-mobile .plus-IXtyn7 {
+  background-color: transparent;
+  height: 10px;
+  left: 79px;
+  position: absolute;
+  top: 3850px;
+  width: 9px;
+}
+.x1homepage-mobile .plus-Lfp2zP {
+  background-color: transparent;
+  height: 10px;
+  left: 79px;
+  position: absolute;
+  top: 2810px;
+  width: 9px;
+}
+.x1homepage-mobile .plus-QdWehx {
+  background-color: transparent;
+  height: 10px;
+  left: 79px;
+  position: absolute;
+  top: 2291px;
+  width: 9px;
+}
+.x1homepage-mobile .plus-ZtbLXy {
+  background-color: transparent;
+  height: 10px;
+  left: 79px;
+  position: absolute;
+  top: 4891px;
+  width: 9px;
+}
+.x1homepage-mobile .plus-oLXoxA {
+  background-color: transparent;
+  height: 10px;
+  left: 79px;
+  position: absolute;
+  top: 731px;
+  width: 9px;
+}
+.x1homepage-mobile .plus-x73zuD {
+  background-color: transparent;
+  height: 10px;
+  left: 79px;
+  position: absolute;
+  top: 1250px;
+  width: 9px;
+}
+.x1homepage-mobile .plus-yJmwS0 {
+  background-color: transparent;
+  height: 10px;
+  left: 79px;
+  position: absolute;
+  top: 4370px;
+  width: 9px;
+}
+.x1homepage-mobile .rectangle-1-06dsNt {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 130px;
+  position: absolute;
+  top: 3313px;
+  width: 206px;
+}
+.x1homepage-mobile .rectangle-1-0vHbSB {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 130px;
+  position: absolute;
+  top: 1233px;
+  width: 206px;
+}
+.x1homepage-mobile .rectangle-1-2aa8iP {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 130px;
+  position: absolute;
+  top: 4353px;
+  width: 206px;
+}
+.x1homepage-mobile .rectangle-1-2csvKt {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 130px;
+  position: absolute;
+  top: 5915px;
+  width: 206px;
+}
+.x1homepage-mobile .rectangle-1-3vvDBC {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 353px;
+  width: 206px;
+}
+.x1homepage-mobile .rectangle-1-6GMOHY {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 5915px;
+  width: 100px;
+}
+.x1homepage-mobile .rectangle-1-CrOrZL {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 1754px;
+  width: 100px;
+}
+.x1homepage-mobile .rectangle-1-DqjYqV {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 3313px;
+  width: 100px;
+}
+.x1homepage-mobile .rectangle-1-FfvVCi {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 130px;
+  position: absolute;
+  top: 5394px;
+  width: 206px;
+}
+.x1homepage-mobile .rectangle-1-IIGSqc {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 2793px;
+  width: 100px;
+}
+.x1homepage-mobile .rectangle-1-IXtyn7 {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 130px;
+  position: absolute;
+  top: 2274px;
+  width: 206px;
+}
+.x1homepage-mobile .rectangle-1-Lfp2zP {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 130px;
+  position: absolute;
+  top: 1754px;
+  width: 206px;
+}
+.x1homepage-mobile .rectangle-1-MkKneo {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 206px;
+}
+.x1homepage-mobile .rectangle-1-QdWehx {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 1233px;
+  width: 100px;
+}
+.x1homepage-mobile .rectangle-1-ZtbLXy {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 130px;
+  position: absolute;
+  top: 2793px;
+  width: 206px;
+}
+.x1homepage-mobile .rectangle-1-bxgjop {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 4874px;
+  width: 100px;
+}
+.x1homepage-mobile .rectangle-1-echPV0 {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 5394px;
+  width: 100px;
+}
+.x1homepage-mobile .rectangle-1-fjXfWc {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 130px;
+  position: absolute;
+  top: 4874px;
+  width: 206px;
+}
+.x1homepage-mobile .rectangle-1-iPe1yZ {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 177px;
+  width: 335px;
+}
+.x1homepage-mobile .rectangle-1-jwHZoj {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 4353px;
+  width: 100px;
+}
+.x1homepage-mobile .rectangle-1-ngdfk7 {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 3833px;
+  width: 100px;
+}
+.x1homepage-mobile .rectangle-1-oLXoxA {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 130px;
+  position: absolute;
+  top: 714px;
+  width: 206px;
+}
+.x1homepage-mobile .rectangle-1-ozGh2r {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 130px;
+  position: absolute;
+  top: 3833px;
+  width: 206px;
+}
+.x1homepage-mobile .rectangle-1-x73zuD {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 714px;
+  width: 100px;
+}
+.x1homepage-mobile .rectangle-1-yJmwS0 {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 2274px;
+  width: 100px;
+}
+.x1homepage-mobile .rectangle-16-C61RwL {
+  background-color: var(--grape);
+  border-radius: 10px;
+  height: 4px;
+  left: 19px;
+  position: absolute;
+  top: 21px;
+  width: 30px;
+}
+.x1homepage-mobile .rectangle-17-C61RwL {
+  background-color: var(--grape);
+  border-radius: 10px;
+  height: 4px;
+  left: 19px;
+  position: absolute;
+  top: 28px;
+  width: 23px;
+}
+.x1homepage-mobile .rectangle-18-C61RwL {
+  background-color: var(--grape);
+  border-radius: 10px;
+  height: 4px;
+  left: 19px;
+  position: absolute;
+  top: 35px;
+  width: 15px;
+}
+.x1homepage-mobile .send-SrlJ3S {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 108px;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  width: 122px;
+}
+.x1homepage-mobile .shop-now-MkKneo {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 38px;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  width: 133px;
+}
+.x1homepage-mobile .shopping-cart-C61RwL {
+  background-color: transparent;
+  height: 35px;
+  left: 324px;
+  position: absolute;
+  top: 12px;
+  width: 34px;
+}
+.x1homepage-mobile .simple-life-C61RwL {
+  background-color: transparent;
+  height: 366px;
+  left: 19px;
+  position: absolute;
+  top: 920px;
+  width: 353px;
+}
+.x1homepage-mobile .subtitle-06dsNt {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 14px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 5837px;
+  width: 311px;
+}
+.x1homepage-mobile .subtitle-0vHbSB {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 14px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 1676px;
+  width: 311px;
+}
+.x1homepage-mobile .subtitle-3vvDBC {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 18px;
+  height: auto;
+  left: 0px;
+  line-height: 26px;
+  position: absolute;
+  text-align: justify;
+  top: 159px;
+  width: 338px;
+}
+.x1homepage-mobile .subtitle-6Hvcgn {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 0px;
+  line-height: 48px;
+  position: absolute;
+  text-align: left;
+  top: 607px;
+  white-space: nowrap;
+  width: auto;
+}
+.x1homepage-mobile .subtitle-6UujYQ {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 0px;
+  line-height: 48px;
+  position: absolute;
+  text-align: left;
+  top: 554px;
+  white-space: nowrap;
+  width: auto;
+}
+.x1homepage-mobile .subtitle-CMvW9s {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 16px;
+  height: auto;
+  left: 24px;
+  line-height: 30px;
+  position: absolute;
+  text-align: left;
+  top: 183px;
+  white-space: nowrap;
+  width: 300px;
+}
+.x1homepage-mobile .subtitle-CrOrZL {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 14px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 3235px;
+  width: 311px;
+}
+.x1homepage-mobile .subtitle-FVTpyx {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 18px;
+  height: auto;
+  left: 0px;
+  line-height: 26px;
+  position: absolute;
+  text-align: justify;
+  top: 154px;
+  width: 338px;
+}
+.x1homepage-mobile .subtitle-IIGSqc {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 14px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 5316px;
+  width: 311px;
+}
+.x1homepage-mobile .subtitle-IXtyn7 {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 14px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 3755px;
+  width: 311px;
+}
+.x1homepage-mobile .subtitle-KHn6Qc {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 0px;
+  line-height: 48px;
+  position: absolute;
+  text-align: left;
+  top: 505px;
+  white-space: nowrap;
+  width: 188px;
+}
+.x1homepage-mobile .subtitle-Lfp2zP {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 14px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 2715px;
+  width: 311px;
+}
+.x1homepage-mobile .subtitle-QdWehx {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 14px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 2196px;
+  width: 311px;
+}
+.x1homepage-mobile .subtitle-Yl6O4v {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 22px;
+  line-height: 48px;
+  position: absolute;
+  text-align: left;
+  top: 660px;
+  white-space: nowrap;
+  width: 228px;
+}
+.x1homepage-mobile .subtitle-ZtbLXy {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 10px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 4796px;
+  width: 319px;
+}
+.x1homepage-mobile .subtitle-edsI20 {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 0px;
+  line-height: 30px;
+  position: absolute;
+  text-align: left;
+  top: 357px;
+  width: 75px;
+}
+.x1homepage-mobile .subtitle-iPe1yZ {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 0px;
+  line-height: 30px;
+  position: absolute;
+  text-align: left;
+  top: 118px;
+  white-space: nowrap;
+  width: auto;
+}
+.x1homepage-mobile .subtitle-nFlIx9 {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 18px;
+  height: auto;
+  left: 2px;
+  line-height: 26px;
+  position: absolute;
+  text-align: justify;
+  top: 153px;
+  width: 336px;
+}
+.x1homepage-mobile .subtitle-oLXoxA {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 17px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 637px;
+  width: 305px;
+}
+.x1homepage-mobile .subtitle-ur51bv {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 0px;
+  line-height: 48px;
+  position: absolute;
+  text-align: left;
+  top: 399px;
+  white-space: nowrap;
+  width: 99px;
+}
+.x1homepage-mobile .subtitle-wlMi8f {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 0px;
+  line-height: 48px;
+  position: absolute;
+  text-align: left;
+  top: 452px;
+  white-space: nowrap;
+  width: 165px;
+}
+.x1homepage-mobile .subtitle-x73zuD {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 14px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 1155px;
+  width: 311px;
+}
+.x1homepage-mobile .subtitle-yJmwS0 {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 14px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 4275px;
+  width: 311px;
+}
+.x1homepage-mobile .text-TNM9gO {
+  background-color: transparent;
+  height: 177px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 353px;
+}
+.x1homepage-mobile .title-06dsNt {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 23px;
+  position: absolute;
+  text-align: center;
+  top: 5772px;
+  width: 293px;
+}
+.x1homepage-mobile .title-0vHbSB {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 59px;
+  position: absolute;
+  text-align: center;
+  top: 1611px;
+  width: 221px;
+}
+.x1homepage-mobile .title-3vvDBC {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 52px;
+  height: auto;
+  left: 0px;
+  line-height: 65px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 282px;
+}
+.x1homepage-mobile .title-CrOrZL {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 19px;
+  position: absolute;
+  text-align: center;
+  top: 3171px;
+  width: 300px;
+}
+.x1homepage-mobile .title-FVTpyx {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 52px;
+  height: auto;
+  left: 0px;
+  line-height: 65px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 353px;
+}
+.x1homepage-mobile .title-IIGSqc {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 51px;
+  position: absolute;
+  text-align: center;
+  top: 5252px;
+  width: 236px;
+}
+.x1homepage-mobile .title-IXtyn7 {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 30px;
+  position: absolute;
+  text-align: center;
+  top: 3691px;
+  width: 279px;
+}
+.x1homepage-mobile .title-Lfp2zP {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 33px;
+  position: absolute;
+  text-align: center;
+  top: 2651px;
+  width: 272px;
+}
+.x1homepage-mobile .title-QdWehx {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 12px;
+  position: absolute;
+  text-align: center;
+  top: 2131px;
+  width: 315px;
+}
+.x1homepage-mobile .title-ZtbLXy {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 29px;
+  position: absolute;
+  text-align: center;
+  top: 4732px;
+  width: 280px;
+}
+.x1homepage-mobile .title-iPe1yZ {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 32px;
+  height: auto;
+  left: 0px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 133px;
+}
+.x1homepage-mobile .title-nFlIx9 {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 60px;
+  height: auto;
+  left: 0px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 321px;
+}
+.x1homepage-mobile .title-oLXoxA {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 87px;
+  position: absolute;
+  text-align: center;
+  top: 571px;
+  width: 165px;
+}
+.x1homepage-mobile .title-sSLkFK {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 52px;
+  height: auto;
+  left: 0px;
+  line-height: 65px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 353px;
+}
+.x1homepage-mobile .title-x73zuD {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 61px;
+  position: absolute;
+  text-align: center;
+  top: 1091px;
+  width: 216px;
+}
+.x1homepage-mobile .title-yJmwS0 {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 9px;
+  position: absolute;
+  text-align: center;
+  top: 4212px;
+  width: 321px;
+}
+.x1homepage-mobile .vector-3-2NGeg1 {
+  background-color: transparent;
+  height: 14px;
+  left: 5px;
+  position: absolute;
+  top: 8px;
+  width: 26px;
+}
+.x1homepage-mobile .vector-4-2NGeg1 {
+  background-color: transparent;
+  height: 23px;
+  left: -0px;
+  position: absolute;
+  top: 3px;
+  width: 26px;
+}
+.x1homepage-mobile .why-miss-cupcake-LzCPSL {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 10px;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  width: 188px;
+}
+.x1homepage-mobile .x-iPe1yZ {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 0px;
+  position: absolute;
+  text-align: left;
+  top: 673px;
+  width: 20px;
+}
+.x1homepage-mobile .x0-0vHbSB {
+  background-color: transparent;
+  height: auto;
+  left: 44px;
+  position: absolute;
+  text-align: left;
+  top: 3323px;
+  width: 15px;
+}
+.x1homepage-mobile .x0-CrOrZL {
+  background-color: transparent;
+  height: auto;
+  left: 44px;
+  position: absolute;
+  text-align: left;
+  top: 4884px;
+  width: 15px;
+}
+.x1homepage-mobile .x0-IXtyn7 {
+  background-color: transparent;
+  height: auto;
+  left: 44px;
+  position: absolute;
+  text-align: left;
+  top: 5404px;
+  width: 15px;
+}
+.x1homepage-mobile .x0-Lfp2zP {
+  background-color: transparent;
+  height: auto;
+  left: 44px;
+  position: absolute;
+  text-align: left;
+  top: 4363px;
+  width: 15px;
+}
+.x1homepage-mobile .x0-QdWehx {
+  background-color: transparent;
+  height: auto;
+  left: 44px;
+  position: absolute;
+  text-align: left;
+  top: 3843px;
+  width: 15px;
+}
+.x1homepage-mobile .x0-oLXoxA {
+  background-color: transparent;
+  height: auto;
+  left: 44px;
+  position: absolute;
+  text-align: left;
+  top: 2284px;
+  width: 15px;
+}
+.x1homepage-mobile .x0-x73zuD {
+  background-color: transparent;
+  height: auto;
+  left: 44px;
+  position: absolute;
+  text-align: left;
+  top: 2803px;
+  width: 15px;
+}
+.x1homepage-mobile .x0-yJmwS0 {
+  background-color: transparent;
+  height: auto;
+  left: 44px;
+  position: absolute;
+  text-align: left;
+  top: 5925px;
+  width: 15px;
+}
+.x1homepage-mobile .x1-oLXoxA {
+  background-color: transparent;
+  height: auto;
+  left: 44px;
+  position: absolute;
+  text-align: left;
+  top: 724px;
+  width: 15px;
+}
+.x1homepage-mobile .x2-oLXoxA {
+  background-color: transparent;
+  height: auto;
+  left: 44px;
+  position: absolute;
+  text-align: left;
+  top: 1764px;
+  width: 15px;
+}
+.x1homepage-mobile .x3-oLXoxA {
+  background-color: transparent;
+  height: auto;
+  left: 44px;
+  position: absolute;
+  text-align: left;
+  top: 1243px;
+  width: 15px;
+}
+.x1homepage-mobile .x8-2NGeg1 {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 10px;
+  height: auto;
+  left: 21px;
+  position: absolute;
+  text-align: left;
+  top: 4px;
+  width: auto;
+}
+:root {
+  --azalea: rgba(247,207,218,1.0);
+  --corn-field: rgba(251,250,201,1.0);
+  --corn-field-2: rgba(251,250,202,1.0);
+  --grape: rgba(100,44,153,1.0);
+  --oasis: rgba(253,239,209,1.0);
+  --oasis-2: rgba(254,239,208,1.0);
+  --papaya-whip: rgba(252,239,210,1.0);
+  --watusi: rgba(250,224,207,1.0);
+}
+/* screen - 1homepage-tablet */
+
+.border-class-1 {
+  border: 1px solid transparent;
+}
+.border-class-2 {
+  border: 2px solid var(--grape);
+}
+.border-class-3 {
+  border: 1px solid var(--grape);
+}
+.border-class-4 {
+  border: 2px solid var(--oasis);
+}
+.font-class-1 {
+  font-family: 'Lato', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.font-class-2 {
+  font-family: 'Lato', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.font-class-3 {
+  font-family: 'Wendy One', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.font-class-4 {
+  color: var(--grape);
+  font-family: 'Avenir', Helvetica, Arial, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+}
+.font-class-5 {
+  color: var(--grape);
+  font-family: 'Lato', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+}
+.font-class-6 {
+  color: var(--grape);
+  font-family: "Lato", Helvetica, Arial, serif;
+  font-size: 20px;
+}
+.x1homepage-tablet {
+  background-color: var(--azalea);
+  height: 6959px;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+.x1homepage-tablet .add-to-cart-06dsNt {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 210px;
+  position: absolute;
+  text-align: left;
+  top: 3558px;
+  width: 107px;
+}
+.x1homepage-tablet .add-to-cart-0vHbSB {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 210px;
+  position: absolute;
+  text-align: left;
+  top: 1259px;
+  width: 107px;
+}
+.x1homepage-tablet .add-to-cart-CrOrZL {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 692px;
+  position: absolute;
+  text-align: left;
+  top: 1830px;
+  width: 107px;
+}
+.x1homepage-tablet .add-to-cart-IIGSqc {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 692px;
+  position: absolute;
+  text-align: left;
+  top: 2982px;
+  width: 107px;
+}
+.x1homepage-tablet .add-to-cart-IXtyn7 {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 210px;
+  position: absolute;
+  text-align: left;
+  top: 2405px;
+  width: 107px;
+}
+.x1homepage-tablet .add-to-cart-Lfp2zP {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 210px;
+  position: absolute;
+  text-align: left;
+  top: 1830px;
+  width: 107px;
+}
+.x1homepage-tablet .add-to-cart-QdWehx {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 692px;
+  position: absolute;
+  text-align: left;
+  top: 1259px;
+  width: 107px;
+}
+.x1homepage-tablet .add-to-cart-ZtbLXy {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 210px;
+  position: absolute;
+  text-align: left;
+  top: 2982px;
+  width: 107px;
+}
+.x1homepage-tablet .add-to-cart-oLXoxA {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 210px;
+  position: absolute;
+  text-align: left;
+  top: 684px;
+  width: 107px;
+}
+.x1homepage-tablet .add-to-cart-x73zuD {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 692px;
+  position: absolute;
+  text-align: left;
+  top: 684px;
+  width: 107px;
+}
+.x1homepage-tablet .add-to-cart-yJmwS0 {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 692px;
+  position: absolute;
+  text-align: left;
+  top: 2405px;
+  width: 107px;
+}
+.x1homepage-tablet .bg-C61RwL {
+  background-color: transparent;
+  height: 6960px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 960px;
+}
+.x1homepage-tablet .cta-3vvDBC {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 333px;
+  width: 206px;
+}
+.x1homepage-tablet .cta-VovSfr {
+  background-color: transparent;
+  height: 43px;
+  left: 378px;
+  position: absolute;
+  top: 320px;
+  width: 208px;
+}
+.x1homepage-tablet .cta-iPe1yZ {
+  background-color: var(--oasis);
+  border-radius: 8px;
+  height: 43px;
+  left: 698px;
+  position: absolute;
+  top: 57px;
+  width: 106px;
+}
+.x1homepage-tablet .cta-nFlIx9 {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 334px;
+  width: 206px;
+}
+.x1homepage-tablet .cupcake-1-oLXoxA {
+  background-color: transparent;
+  height: 230px;
+  left: 97px;
+  position: absolute;
+  top: 249px;
+  width: 201px;
+}
+.x1homepage-tablet .cupcake-2-oLXoxA {
+  background-color: transparent;
+  height: 229px;
+  left: 568px;
+  position: absolute;
+  top: 250px;
+  width: 223px;
+}
+.x1homepage-tablet .cupcake-3-oLXoxA {
+  background-color: transparent;
+  height: 235px;
+  left: 86px;
+  position: absolute;
+  top: 819px;
+  width: 223px;
+}
+.x1homepage-tablet .cupcakes-C61RwL {
+  background-color: transparent;
+  height: 3588px;
+  left: 42px;
+  position: absolute;
+  top: 1711px;
+  width: 847px;
+}
+.x1homepage-tablet .ellipse-1-2NGeg1 {
+  background-color: transparent;
+  height: 26px;
+  left: 43px;
+  position: absolute;
+  top: 19px;
+  width: 26px;
+}
+.x1homepage-tablet .ellipse-2-2NGeg1 {
+  background-color: transparent;
+  height: 9px;
+  left: 26px;
+  position: absolute;
+  top: 54px;
+  width: 9px;
+}
+.x1homepage-tablet .ellipse-3-2NGeg1 {
+  background-color: transparent;
+  height: 9px;
+  left: 42px;
+  position: absolute;
+  top: 54px;
+  width: 9px;
+}
+.x1homepage-tablet .footer-C61RwL {
+  background-color: transparent;
+  height: 412px;
+  left: 71px;
+  position: absolute;
+  top: 6478px;
+  width: 804px;
+}
+.x1homepage-tablet .image-10-oLXoxA {
+  background-color: transparent;
+  height: 244px;
+  left: 99px;
+  position: absolute;
+  top: 3109px;
+  width: 197px;
+}
+.x1homepage-tablet .image-3-oLXoxA {
+  background-color: transparent;
+  height: 244px;
+  left: 578px;
+  position: absolute;
+  top: 809px;
+  width: 203px;
+}
+.x1homepage-tablet .image-4-oLXoxA {
+  background-color: transparent;
+  height: 244px;
+  left: 89px;
+  position: absolute;
+  top: 1380px;
+  width: 217px;
+}
+.x1homepage-tablet .image-5-oLXoxA {
+  background-color: transparent;
+  height: 244px;
+  left: 584px;
+  position: absolute;
+  top: 1380px;
+  width: 192px;
+}
+.x1homepage-tablet .image-53-C61RwL {
+  background-color: transparent;
+  height: 500px;
+  left: 494px;
+  position: absolute;
+  top: 5883px;
+  width: 364px;
+}
+.x1homepage-tablet .image-54-VovSfr {
+  background-color: transparent;
+  height: 399px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 322px;
+}
+.x1homepage-tablet .image-55-C61RwL {
+  background-color: transparent;
+  height: 716px;
+  left: 503px;
+  position: absolute;
+  top: 126px;
+  width: 365px;
+}
+.x1homepage-tablet .image-6-oLXoxA {
+  background-color: transparent;
+  height: 244px;
+  left: 96px;
+  position: absolute;
+  top: 1956px;
+  width: 202px;
+}
+.x1homepage-tablet .image-7-oLXoxA {
+  background-color: transparent;
+  height: 244px;
+  left: 578px;
+  position: absolute;
+  top: 1956px;
+  width: 203px;
+}
+.x1homepage-tablet .image-8-oLXoxA {
+  background-color: transparent;
+  height: 243px;
+  left: 87px;
+  position: absolute;
+  top: 2534px;
+  width: 218px;
+}
+.x1homepage-tablet .image-9-oLXoxA {
+  background-color: transparent;
+  height: 244px;
+  left: 579px;
+  position: absolute;
+  top: 2533px;
+  width: 200px;
+}
+.x1homepage-tablet .minus-06dsNt {
+  background-color: transparent;
+  height: 2px;
+  left: 41px;
+  position: absolute;
+  top: 3566px;
+  width: 9px;
+}
+.x1homepage-tablet .minus-0vHbSB {
+  background-color: transparent;
+  height: 2px;
+  left: 41px;
+  position: absolute;
+  top: 1267px;
+  width: 9px;
+}
+.x1homepage-tablet .minus-CrOrZL {
+  background-color: transparent;
+  height: 2px;
+  left: 523px;
+  position: absolute;
+  top: 1838px;
+  width: 9px;
+}
+.x1homepage-tablet .minus-IIGSqc {
+  background-color: transparent;
+  height: 2px;
+  left: 523px;
+  position: absolute;
+  top: 2990px;
+  width: 9px;
+}
+.x1homepage-tablet .minus-IXtyn7 {
+  background-color: transparent;
+  height: 2px;
+  left: 41px;
+  position: absolute;
+  top: 2413px;
+  width: 9px;
+}
+.x1homepage-tablet .minus-Lfp2zP {
+  background-color: transparent;
+  height: 2px;
+  left: 41px;
+  position: absolute;
+  top: 1838px;
+  width: 9px;
+}
+.x1homepage-tablet .minus-QdWehx {
+  background-color: transparent;
+  height: 2px;
+  left: 523px;
+  position: absolute;
+  top: 1267px;
+  width: 9px;
+}
+.x1homepage-tablet .minus-ZtbLXy {
+  background-color: transparent;
+  height: 2px;
+  left: 41px;
+  position: absolute;
+  top: 2990px;
+  width: 9px;
+}
+.x1homepage-tablet .minus-oLXoxA {
+  background-color: transparent;
+  height: 2px;
+  left: 41px;
+  position: absolute;
+  top: 692px;
+  width: 9px;
+}
+.x1homepage-tablet .minus-x73zuD {
+  background-color: transparent;
+  height: 2px;
+  left: 523px;
+  position: absolute;
+  top: 692px;
+  width: 9px;
+}
+.x1homepage-tablet .minus-yJmwS0 {
+  background-color: transparent;
+  height: 2px;
+  left: 523px;
+  position: absolute;
+  top: 2413px;
+  width: 9px;
+}
+.x1homepage-tablet .miss-cupcake-C61RwL {
+  background-color: transparent;
+  height: 377px;
+  left: 40px;
+  position: absolute;
+  top: 216px;
+  width: 521px;
+}
+.x1homepage-tablet .once-upon-a-time-C61RwL {
+  background-color: transparent;
+  height: 376px;
+  left: 71px;
+  position: absolute;
+  top: 5636px;
+  width: 474px;
+}
+.x1homepage-tablet .our-story-C61RwL {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 18px;
+  height: auto;
+  left: 110px;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: 29px;
+  transition: all 0.2s ease;
+  width: 94px;
+}
+.x1homepage-tablet .our-story-C61RwL:hover {
+
+transform: scale(1.1);
+}
+.x1homepage-tablet .our-story-FflzRv {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 44px;
+  position: absolute;
+  text-align: center;
+  top: 13px;
+  width: 121px;
+}
+.x1homepage-tablet .plus-06dsNt {
+  background-color: transparent;
+  height: 10px;
+  left: 108px;
+  position: absolute;
+  top: 3562px;
+  width: 9px;
+}
+.x1homepage-tablet .plus-0vHbSB {
+  background-color: transparent;
+  height: 10px;
+  left: 108px;
+  position: absolute;
+  top: 1263px;
+  width: 9px;
+}
+.x1homepage-tablet .plus-CrOrZL {
+  background-color: transparent;
+  height: 10px;
+  left: 590px;
+  position: absolute;
+  top: 1834px;
+  width: 9px;
+}
+.x1homepage-tablet .plus-IIGSqc {
+  background-color: transparent;
+  height: 10px;
+  left: 590px;
+  position: absolute;
+  top: 2986px;
+  width: 9px;
+}
+.x1homepage-tablet .plus-IXtyn7 {
+  background-color: transparent;
+  height: 10px;
+  left: 108px;
+  position: absolute;
+  top: 2409px;
+  width: 9px;
+}
+.x1homepage-tablet .plus-Lfp2zP {
+  background-color: transparent;
+  height: 10px;
+  left: 108px;
+  position: absolute;
+  top: 1834px;
+  width: 9px;
+}
+.x1homepage-tablet .plus-QdWehx {
+  background-color: transparent;
+  height: 10px;
+  left: 590px;
+  position: absolute;
+  top: 1263px;
+  width: 9px;
+}
+.x1homepage-tablet .plus-ZtbLXy {
+  background-color: transparent;
+  height: 10px;
+  left: 108px;
+  position: absolute;
+  top: 2986px;
+  width: 9px;
+}
+.x1homepage-tablet .plus-oLXoxA {
+  background-color: transparent;
+  height: 10px;
+  left: 108px;
+  position: absolute;
+  top: 688px;
+  width: 9px;
+}
+.x1homepage-tablet .plus-x73zuD {
+  background-color: transparent;
+  height: 10px;
+  left: 590px;
+  position: absolute;
+  top: 688px;
+  width: 9px;
+}
+.x1homepage-tablet .plus-yJmwS0 {
+  background-color: transparent;
+  height: 10px;
+  left: 590px;
+  position: absolute;
+  top: 2409px;
+  width: 9px;
+}
+.x1homepage-tablet .rectangle-1-06dsNt {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 641px;
+  position: absolute;
+  top: 1817px;
+  width: 206px;
+}
+.x1homepage-tablet .rectangle-1-08AYX9 {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 206px;
+}
+.x1homepage-tablet .rectangle-1-0vHbSB {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 641px;
+  position: absolute;
+  top: 671px;
+  width: 206px;
+}
+.x1homepage-tablet .rectangle-1-2aa8iP {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 641px;
+  position: absolute;
+  top: 2392px;
+  width: 206px;
+}
+.x1homepage-tablet .rectangle-1-2csvKt {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 159px;
+  position: absolute;
+  top: 3545px;
+  width: 206px;
+}
+.x1homepage-tablet .rectangle-1-6GMOHY {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 29px;
+  position: absolute;
+  top: 3545px;
+  width: 100px;
+}
+.x1homepage-tablet .rectangle-1-CrOrZL {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 29px;
+  position: absolute;
+  top: 1246px;
+  width: 100px;
+}
+.x1homepage-tablet .rectangle-1-DqjYqV {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 511px;
+  position: absolute;
+  top: 1817px;
+  width: 100px;
+}
+.x1homepage-tablet .rectangle-1-FfvVCi {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 641px;
+  position: absolute;
+  top: 2969px;
+  width: 206px;
+}
+.x1homepage-tablet .rectangle-1-IIGSqc {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 29px;
+  position: absolute;
+  top: 1817px;
+  width: 100px;
+}
+.x1homepage-tablet .rectangle-1-IXtyn7 {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 641px;
+  position: absolute;
+  top: 1246px;
+  width: 206px;
+}
+.x1homepage-tablet .rectangle-1-Lfp2zP {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 159px;
+  position: absolute;
+  top: 1246px;
+  width: 206px;
+}
+.x1homepage-tablet .rectangle-1-QdWehx {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 511px;
+  position: absolute;
+  top: 671px;
+  width: 100px;
+}
+.x1homepage-tablet .rectangle-1-ZtbLXy {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 159px;
+  position: absolute;
+  top: 1817px;
+  width: 206px;
+}
+.x1homepage-tablet .rectangle-1-bxgjop {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 29px;
+  position: absolute;
+  top: 2969px;
+  width: 100px;
+}
+.x1homepage-tablet .rectangle-1-echPV0 {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 511px;
+  position: absolute;
+  top: 2969px;
+  width: 100px;
+}
+.x1homepage-tablet .rectangle-1-fjXfWc {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 159px;
+  position: absolute;
+  top: 2969px;
+  width: 206px;
+}
+.x1homepage-tablet .rectangle-1-iPe1yZ {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 273px;
+  position: absolute;
+  top: 57px;
+  width: 394px;
+}
+.x1homepage-tablet .rectangle-1-jwHZoj {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 511px;
+  position: absolute;
+  top: 2392px;
+  width: 100px;
+}
+.x1homepage-tablet .rectangle-1-ngdfk7 {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 29px;
+  position: absolute;
+  top: 2392px;
+  width: 100px;
+}
+.x1homepage-tablet .rectangle-1-oLXoxA {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 159px;
+  position: absolute;
+  top: 671px;
+  width: 206px;
+}
+.x1homepage-tablet .rectangle-1-ozGh2r {
+  background-color: var(--grape);
+  border-radius: 8px;
+  height: 43px;
+  left: 159px;
+  position: absolute;
+  top: 2392px;
+  width: 206px;
+}
+.x1homepage-tablet .rectangle-1-x73zuD {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 29px;
+  position: absolute;
+  top: 671px;
+  width: 100px;
+}
+.x1homepage-tablet .rectangle-1-yJmwS0 {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 43px;
+  left: 511px;
+  position: absolute;
+  top: 1246px;
+  width: 100px;
+}
+.x1homepage-tablet .send-gOWzxD {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 32px;
+  position: absolute;
+  text-align: left;
+  top: 12px;
+  width: 45px;
+}
+.x1homepage-tablet .shop-C61RwL {
+  background-color: transparent;
+  height: auto;
+  left: 39px;
+  position: absolute;
+  text-align: left;
+  top: 29px;
+  width: 58px;
+}
+.x1homepage-tablet .shop-now-MkKneo {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 35px;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  width: 139px;
+}
+.x1homepage-tablet .shopping-cart-C61RwL {
+  background-color: transparent;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/ellipse-6@2x.png);
+  background-size: 100% 100%;
+  height: 82px;
+  left: 853px;
+  position: absolute;
+  top: 1px;
+  width: 82px;
+}
+.x1homepage-tablet .simple-sweet-life-C61RwL {
+  background-color: transparent;
+  height: 399px;
+  left: 42px;
+  position: absolute;
+  top: 972px;
+  width: 890px;
+}
+.x1homepage-tablet .subtitle-06dsNt {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 43px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 3467px;
+  width: 311px;
+}
+.x1homepage-tablet .subtitle-0vHbSB {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 43px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 1168px;
+  width: 311px;
+}
+.x1homepage-tablet .subtitle-3vvDBC {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 18px;
+  height: auto;
+  left: 0px;
+  line-height: 26px;
+  position: absolute;
+  text-align: left;
+  top: 190px;
+  width: 474px;
+}
+.x1homepage-tablet .subtitle-6Hvcgn {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 18px;
+  line-height: 48px;
+  position: absolute;
+  text-align: left;
+  top: 363px;
+  white-space: nowrap;
+  width: 248px;
+}
+.x1homepage-tablet .subtitle-6UujYQ {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 272px;
+  line-height: 48px;
+  position: absolute;
+  text-align: left;
+  top: 205px;
+  white-space: nowrap;
+  width: auto;
+}
+.x1homepage-tablet .subtitle-CMvW9s {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 272px;
+  line-height: 30px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+.x1homepage-tablet .subtitle-CrOrZL {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 525px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 1739px;
+  width: 311px;
+}
+.x1homepage-tablet .subtitle-IIGSqc {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 525px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 2891px;
+  width: 311px;
+}
+.x1homepage-tablet .subtitle-IXtyn7 {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 43px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 2314px;
+  width: 311px;
+}
+.x1homepage-tablet .subtitle-KHn6Qc {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 272px;
+  line-height: 48px;
+  position: absolute;
+  text-align: left;
+  top: 159px;
+  white-space: nowrap;
+  width: 188px;
+}
+.x1homepage-tablet .subtitle-Lfp2zP {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 43px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 1739px;
+  width: 311px;
+}
+.x1homepage-tablet .subtitle-QdWehx {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 525px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 1168px;
+  width: 311px;
+}
+.x1homepage-tablet .subtitle-VovSfr {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 18px;
+  height: auto;
+  left: 378px;
+  line-height: 26px;
+  position: absolute;
+  text-align: left;
+  top: 202px;
+  width: 461px;
+}
+.x1homepage-tablet .subtitle-Yl6O4v {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 272px;
+  line-height: 48px;
+  position: absolute;
+  text-align: left;
+  top: 256px;
+  white-space: nowrap;
+  width: auto;
+}
+.x1homepage-tablet .subtitle-ZtbLXy {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 39px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 2891px;
+  width: 319px;
+}
+.x1homepage-tablet .subtitle-edsI20 {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 16px;
+  height: auto;
+  left: 297px;
+  line-height: 30px;
+  position: absolute;
+  text-align: left;
+  top: 63px;
+  white-space: nowrap;
+  width: 353px;
+}
+.x1homepage-tablet .subtitle-iPe1yZ {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 0px;
+  line-height: 30px;
+  position: absolute;
+  text-align: left;
+  top: 166px;
+  width: 51px;
+}
+.x1homepage-tablet .subtitle-nFlIx9 {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 18px;
+  height: auto;
+  left: 0px;
+  line-height: 26px;
+  position: absolute;
+  text-align: left;
+  top: 244px;
+  width: 521px;
+}
+.x1homepage-tablet .subtitle-oLXoxA {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 46px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 593px;
+  width: 305px;
+}
+.x1homepage-tablet .subtitle-ur51bv {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 0px;
+  line-height: 48px;
+  position: absolute;
+  text-align: left;
+  top: 205px;
+  white-space: nowrap;
+  width: 99px;
+}
+.x1homepage-tablet .subtitle-wlMi8f {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 0px;
+  line-height: 48px;
+  position: absolute;
+  text-align: left;
+  top: 256px;
+  white-space: nowrap;
+  width: 165px;
+}
+.x1homepage-tablet .subtitle-x73zuD {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 525px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 593px;
+  width: 311px;
+}
+.x1homepage-tablet .subtitle-yJmwS0 {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 16px;
+  height: auto;
+  left: 525px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 2314px;
+  width: 311px;
+}
+.x1homepage-tablet .title-06dsNt {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 104px;
+  position: absolute;
+  text-align: left;
+  top: 3399px;
+  width: 189px;
+}
+.x1homepage-tablet .title-0vHbSB {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 122px;
+  position: absolute;
+  text-align: left;
+  top: 1100px;
+  width: 153px;
+}
+.x1homepage-tablet .title-3vvDBC {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 70px;
+  height: auto;
+  left: 0px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 369px;
+}
+.x1homepage-tablet .title-CrOrZL {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 563px;
+  position: absolute;
+  text-align: left;
+  top: 1671px;
+  width: 234px;
+}
+.x1homepage-tablet .title-IIGSqc {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 587px;
+  position: absolute;
+  text-align: left;
+  top: 2823px;
+  width: 186px;
+}
+.x1homepage-tablet .title-IXtyn7 {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 89px;
+  position: absolute;
+  text-align: left;
+  top: 2246px;
+  width: 219px;
+}
+.x1homepage-tablet .title-Lfp2zP {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 88px;
+  position: absolute;
+  text-align: left;
+  top: 1671px;
+  width: 220px;
+}
+.x1homepage-tablet .title-QdWehx {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 553px;
+  position: absolute;
+  text-align: left;
+  top: 1100px;
+  width: 255px;
+}
+.x1homepage-tablet .title-VovSfr {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 70px;
+  height: auto;
+  left: 378px;
+  position: absolute;
+  text-align: left;
+  top: 25px;
+  width: 512px;
+}
+.x1homepage-tablet .title-ZtbLXy {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 119px;
+  position: absolute;
+  text-align: left;
+  top: 2823px;
+  width: 158px;
+}
+.x1homepage-tablet .title-iPe1yZ {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 32px;
+  height: auto;
+  left: 0px;
+  position: absolute;
+  text-align: left;
+  top: 1px;
+  width: 133px;
+}
+.x1homepage-tablet .title-nFlIx9 {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 100px;
+  height: auto;
+  left: 0px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 512px;
+}
+.x1homepage-tablet .title-oLXoxA {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 148px;
+  position: absolute;
+  text-align: left;
+  top: 525px;
+  width: 101px;
+}
+.x1homepage-tablet .title-x73zuD {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 597px;
+  position: absolute;
+  text-align: left;
+  top: 525px;
+  width: 166px;
+}
+.x1homepage-tablet .title-yJmwS0 {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 32px;
+  height: auto;
+  left: 541px;
+  position: absolute;
+  text-align: left;
+  top: 2246px;
+  width: 279px;
+}
+.x1homepage-tablet .title1-oLXoxA {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 70px;
+  height: auto;
+  left: 0px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 535px;
+}
+.x1homepage-tablet .vector-3-2NGeg1 {
+  background-color: transparent;
+  height: 17px;
+  left: 24px;
+  position: absolute;
+  top: 29px;
+  width: 32px;
+}
+.x1homepage-tablet .vector-4-2NGeg1 {
+  background-color: transparent;
+  height: 29px;
+  left: 17px;
+  position: absolute;
+  top: 23px;
+  width: 34px;
+}
+.x1homepage-tablet .why-miss-cupcake-08AYX9 {
+  background-color: transparent;
+  color: var(--corn-field);
+  font-size: 16px;
+  height: auto;
+  left: 25px;
+  position: absolute;
+  text-align: left;
+  top: 12px;
+  width: 183px;
+}
+.x1homepage-tablet .why-miss-cupcake-C61RwL {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 18px;
+  height: auto;
+  left: 217px;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: 29px;
+  transition: all 0.2s ease;
+  width: 178px;
+}
+.x1homepage-tablet .why-miss-cupcake-C61RwL:hover {
+
+transform: scale(1.1);
+}
+.x1homepage-tablet .x-iPe1yZ {
+  background-color: transparent;
+  color: var(--oasis);
+  font-size: 18px;
+  height: auto;
+  left: 0px;
+  position: absolute;
+  text-align: left;
+  top: 376px;
+  width: auto;
+}
+.x1homepage-tablet .x0-0vHbSB {
+  background-color: transparent;
+  height: auto;
+  left: 555px;
+  position: absolute;
+  text-align: left;
+  top: 1827px;
+  width: 15px;
+}
+.x1homepage-tablet .x0-CrOrZL {
+  background-color: transparent;
+  height: auto;
+  left: 73px;
+  position: absolute;
+  text-align: left;
+  top: 2979px;
+  width: 15px;
+}
+.x1homepage-tablet .x0-IXtyn7 {
+  background-color: transparent;
+  height: auto;
+  left: 555px;
+  position: absolute;
+  text-align: left;
+  top: 2979px;
+  width: 15px;
+}
+.x1homepage-tablet .x0-Lfp2zP {
+  background-color: transparent;
+  height: auto;
+  left: 555px;
+  position: absolute;
+  text-align: left;
+  top: 2402px;
+  width: 15px;
+}
+.x1homepage-tablet .x0-QdWehx {
+  background-color: transparent;
+  height: auto;
+  left: 73px;
+  position: absolute;
+  text-align: left;
+  top: 2402px;
+  width: 15px;
+}
+.x1homepage-tablet .x0-oLXoxA {
+  background-color: transparent;
+  height: auto;
+  left: 555px;
+  position: absolute;
+  text-align: left;
+  top: 1256px;
+  width: 15px;
+}
+.x1homepage-tablet .x0-x73zuD {
+  background-color: transparent;
+  height: auto;
+  left: 73px;
+  position: absolute;
+  text-align: left;
+  top: 1827px;
+  width: 15px;
+}
+.x1homepage-tablet .x0-yJmwS0 {
+  background-color: transparent;
+  height: auto;
+  left: 73px;
+  position: absolute;
+  text-align: left;
+  top: 3555px;
+  width: 15px;
+}
+.x1homepage-tablet .x1-oLXoxA {
+  background-color: transparent;
+  height: auto;
+  left: 73px;
+  position: absolute;
+  text-align: left;
+  top: 681px;
+  width: 15px;
+}
+.x1homepage-tablet .x2-oLXoxA {
+  background-color: transparent;
+  height: auto;
+  left: 73px;
+  position: absolute;
+  text-align: left;
+  top: 1256px;
+  width: 15px;
+}
+.x1homepage-tablet .x3-oLXoxA {
+  background-color: transparent;
+  height: auto;
+  left: 555px;
+  position: absolute;
+  text-align: left;
+  top: 681px;
+  width: 15px;
+}
+.x1homepage-tablet .x8-2NGeg1 {
+  background-color: transparent;
+  color: var(--grape);
+  font-size: 14px;
+  height: auto;
+  left: 52px;
+  position: absolute;
+  text-align: left;
+  top: 23px;
+  width: 10px;
+}
+:root {
+  --azalea: rgba(247,207,218,1.0);
+  --corn-field: rgba(251,250,201,1.0);
+  --corn-field-2: rgba(251,250,202,1.0);
+  --grape: rgba(100,44,153,1.0);
+  --oasis: rgba(253,239,209,1.0);
+  --oasis-2: rgba(254,239,208,1.0);
+  --papaya-whip: rgba(252,239,210,1.0);
+  --watusi: rgba(250,224,207,1.0);
+}
+
+</style>
+    
+    
+    
+    <meta name="author" content="AnimaApp.com - Design to code, Automated.">
+<style type="text/css">[dark-scroll]::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+[dark-scroll]::-webkit-scrollbar-track-piece {
+	background-color: #2b2b2b;
+	border: 1px solid #1d1d1d;
+}
+
+[dark-scroll]::-webkit-scrollbar-thumb {
+  height: 10px;
+	background-color: #4d4d4d;
+}
+[dark-scroll]::-webkit-scrollbar-thumb:hover {
+	background-color: #5a5a5a;
+
+}</style><style id="hotspots-styles">
+    .hotspot {
+      position: absolute;
+      border: 1px solid #2a9fd8;
+      background: rgba(0, 173, 255, 0.54);
+      opacity: 0;
+      z-index: -1;
+    }
+  </style><style id="overrides-styles" type="text">
+.box-highlight {
+  position: absolute;
+  border: 1px solid #4285f4;
+  background: rgba(66, 133, 244, 0.1);
+  pointer-events: none;
+  box-sizing: border-box;
+  top:-20px;
+  left:-20px;
+}
+.box-wrapper {
+  width:100%;
+  height:100%;
+  position:relative
+}
+.tag-box {
+  position: absolute;
+  left: 0;
+  top: -20px;
+  height: 20px;
+  width: auto;
+  padding: 0px 8px;
+  background:#4285f4;
+  color:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:-apple-system, BlinkMacSystemFont, "Open Sans",sans-serif;
+  font-weight:600;
+  font-size:14px;
+}
+</style><style id="comments-styles" type="text">
+*{
+  cursor: crosshair !important;
+}
+.comment-box {
+  position: absolute;
+  border: 1px solid #ff6250;
+  background: rgba(255, 98, 80,0.1);
+  pointer-events: none;
+  box-sizing: border-box;
+  top:-20px;
+  left:-20px;
+}
+.comment-box-wrapper {
+  width:100%;
+  height:100%;
+  position:relative
+}
+.comment-box-tag {
+  position: absolute;
+  left: 0;
+  top: -20px;
+  height: 20px;
+  width: auto;
+  padding: 0px 8px;
+  background:#ff6250;
+  color:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:-apple-system, BlinkMacSystemFont, "Open Sans",sans-serif;
+  font-weight:600;
+  font-size:14px;
+}
+.comment-number{
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: cornflowerblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  font-family:sans-serif;
+}
+</style></head>
+<body style="margin: 0px; background: rgb(247, 207, 218); overflow-x: hidden;" dark-scroll="">
+<input type="hidden" id="anPageName" name="page" value="1homepage">
+
+    <div class="anima-container-center-horizontal">
+<div class="x1homepage border-class-1 anima-screen " data-id="1:2">
+    
+<div class="simple-sweet-life-C61RwL" data-id="940:4">
+
+
+<div class="title-VovSfr font-class-3 border-class-1" data-id="2:70">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        The Simple, Sweet Life
+    
+</div>
+
+
+
+<div class="subtitle-VovSfr font-class-1 border-class-1" data-id="2:71">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Our cupcakes are always made with the finest ingredients, creating a spark that makes your taste buds dance. You’ll want to indulge in each and every decadent flavor.
+    
+</div>
+<a href="3why-miss-cupcake">
+<div class="cta-VovSfr" data-id="2:72" data-hotspot-id="hp-0">
+<div class="rectangle-1-08AYX9" data-id="2:73"></div>
+
+
+
+<div class="why-miss-cupcake-08AYX9 font-class-1 border-class-1" data-id="2:74">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        WHY MISS CUPCAKE
+    
+</div>
+</div></a>
+</div>
+
+<div class="miss-cupcake-C61RwL" data-id="940:3">
+
+
+<h1 class="title-nFlIx9 font-class-3 border-class-1" data-id="2:9">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Miss cupcake
+    
+</h1>
+
+
+
+<div class="subtitle-nFlIx9 font-class-1 border-class-1" data-id="2:11">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        We are proud to offer cupcakes and cakes that are freshly baked within hours, if not minutes, for your enjoyment.
+    
+</div>
+<a href="#title">
+<div class="cta-nFlIx9" data-id="2:17" data-hotspot-id="hp-1">
+
+
+<div class="shop-now-MkKneo font-class-1 border-class-1" data-id="2:12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        SHOP NOW
+    
+</div>
+</div></a>
+</div>
+
+<div class="once-upon-a-time-C61RwL" data-id="940:7">
+
+
+<div class="title-3vvDBC font-class-3 border-class-1" data-id="4:7">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        once upon a time..
+    
+</div>
+
+
+
+<div class="subtitle-3vvDBC font-class-1 border-class-1" data-id="4:8">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        The art of baking runs deep in our family. Growing up on our family we learned from the best. Our mom was an amazing baker. She not only taught us how to bake, she passed along her values of quality, honesty and integrity.
+    
+</div>
+<a href="2our-story-video-map">
+<div class="cta-3vvDBC" data-id="4:9" data-hotspot-id="hp-2">
+
+
+<div class="our-story-FflzRv font-class-1 border-class-1" data-id="4:11">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        OUR STORY
+    
+</div>
+</div></a>
+<img class="image-11-3vvDBC" data-id="4:18" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-11@1x.png">
+</div>
+
+
+
+<div class="title-C61RwL font-class-3 border-class-1 bp1-anima-animate-enter" data-id="2:78" id="title">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Make your day a little sweeter
+    
+</div>
+<img class="cupcake-3-C61RwL" data-id="2:88" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/cupcake-3@2x.png">
+
+<div class="rectangle-1-C61RwL" data-id="2:117"></div>
+
+
+
+<div class="add-to-cart-C61RwL font-class-1 border-class-1" data-id="2:118">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-VMr6Om border-class-2" data-id="2:120"></div>
+<img class="minus-C61RwL" data-id="2:121" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-C61RwL" data-id="2:122" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x2-C61RwL font-class-4 border-class-1" data-id="2:123">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        2
+    
+</div>
+
+
+
+<p class="subtitle-C61RwL font-class-1 border-class-1" data-id="2:124">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Homemade chocolate cupcakes topped with thick &amp; creamy mint chocolate chip frosting.
+    
+</p>
+
+
+
+<div class="title-VMr6Om font-class-3 border-class-1" data-id="2:125">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Mint Chip
+    
+</div>
+
+<div class="rectangle-1-mzXdH9" data-id="2:129"></div>
+
+
+
+<div class="add-to-cart-VMr6Om font-class-1 border-class-1" data-id="2:130">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-QxM5SU border-class-2" data-id="2:132"></div>
+<img class="minus-VMr6Om" data-id="2:133" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-VMr6Om" data-id="2:134" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-C61RwL font-class-4 border-class-1" data-id="2:135">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-VMr6Om font-class-1 border-class-1" data-id="2:136">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        A fluffy strawberry cupcake with strawberry buttercream frosting and chocolate syrup.
+    
+</p>
+
+
+
+<div class="title-mzXdH9 font-class-3 border-class-1" data-id="2:137">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Pink strawberry
+    
+</div>
+<img class="image-3-C61RwL" data-id="2:225" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-3@2x.png">
+
+<div class="rectangle-1-2P4qUJ" data-id="2:141"></div>
+
+
+
+<div class="add-to-cart-mzXdH9 font-class-1 border-class-1" data-id="2:142">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-qr8e7q border-class-2" data-id="2:144"></div>
+<img class="minus-mzXdH9" data-id="2:145" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-mzXdH9" data-id="2:146" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-VMr6Om font-class-4 border-class-1" data-id="2:147">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-mzXdH9 font-class-1 border-class-1" data-id="2:148">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        A super chocolatey cupcake base with a soft marshmallowy buttercream topping.
+    
+</p>
+
+
+
+<div class="title-QxM5SU font-class-3 border-class-1" data-id="2:149">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Marshmallow
+    
+</div>
+<img class="image-4-C61RwL" data-id="2:227" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-4@2x.png">
+
+<div class="rectangle-1-J1YQmd" data-id="2:153"></div>
+
+
+
+<div class="add-to-cart-QxM5SU font-class-1 border-class-1" data-id="2:154">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-a5WPlX border-class-2" data-id="2:156"></div>
+<img class="minus-QxM5SU" data-id="2:157" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-QxM5SU" data-id="2:158" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-mzXdH9 font-class-4 border-class-1" data-id="2:159">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-QxM5SU font-class-1 border-class-1" data-id="2:160">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Belgian chocolate cake with sweet chocolate frosting and cheery.
+    
+</p>
+
+
+
+<div class="title-2P4qUJ font-class-3 border-class-1" data-id="2:161">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Dark Chocolate
+    
+</div>
+<img class="image-5-C61RwL" data-id="2:229" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-5@2x.png">
+
+<div class="rectangle-1-HlKRTo" data-id="2:165"></div>
+
+
+
+<div class="add-to-cart-2P4qUJ font-class-1 border-class-1" data-id="2:166">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-VkPPtx border-class-2" data-id="2:168"></div>
+<img class="minus-2P4qUJ" data-id="2:169" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-2P4qUJ" data-id="2:170" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-QxM5SU font-class-4 border-class-1" data-id="2:171">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-2P4qUJ font-class-1 border-class-1" data-id="2:172">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Caramel cake with a buttery caramel cream cheese frosting topped with fleur de sel.
+    
+</p>
+
+
+
+<div class="title-qr8e7q font-class-3 border-class-1" data-id="2:173">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Salty Caramel
+    
+</div>
+<img class="image-6-C61RwL" data-id="2:231" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-6@2x.png">
+
+<div class="rectangle-1-YWzA7M" data-id="2:177"></div>
+
+
+
+<div class="add-to-cart-qr8e7q font-class-1 border-class-1" data-id="2:178">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-3kIbHG border-class-2" data-id="2:180"></div>
+<img class="minus-qr8e7q" data-id="2:181" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-qr8e7q" data-id="2:182" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-2P4qUJ font-class-4 border-class-1" data-id="2:183">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-qr8e7q font-class-1 border-class-1" data-id="2:184">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        A gluten free twist on our classic red velvet, topped off with cream cheese.
+    
+</p>
+
+
+
+<div class="title-J1YQmd font-class-3 border-class-1" data-id="2:185">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Gluten Free Velvet
+    
+</div>
+<img class="image-7-C61RwL" data-id="2:233" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-7@2x.png">
+
+<div class="rectangle-1-a73nmY" data-id="2:189"></div>
+
+
+
+<div class="add-to-cart-J1YQmd font-class-1 border-class-1" data-id="2:190">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-R7WrHk border-class-2" data-id="2:192"></div>
+<img class="minus-J1YQmd" data-id="2:193" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-J1YQmd" data-id="2:194" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-qr8e7q font-class-4 border-class-1" data-id="2:195">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-J1YQmd font-class-1 border-class-1" data-id="2:196">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Lightly spiced buttermilk cake with cinnamon cream cheese frosting with cinnamon sugar.
+    
+</p>
+
+
+
+<div class="title-a5WPlX font-class-3 border-class-1" data-id="2:197">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Cinnamon
+    
+</div>
+<img class="image-8-C61RwL" data-id="2:235" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-8@2x.png">
+
+<div class="rectangle-1-rxvq3k" data-id="2:201"></div>
+
+
+
+<div class="add-to-cart-a5WPlX font-class-1 border-class-1" data-id="2:202">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-00LGpa border-class-2" data-id="2:204"></div>
+<img class="minus-a5WPlX" data-id="2:205" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-a5WPlX" data-id="2:206" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-J1YQmd font-class-4 border-class-1" data-id="2:207">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-a5WPlX font-class-1 border-class-1" data-id="2:208">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        A sweet hazelnut paste with nutella butter cream and chopped hazelnuts on the top.
+    
+</p>
+
+
+
+<div class="title-HlKRTo font-class-3 border-class-1" data-id="2:209">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Totally nuts
+    
+</div>
+<img class="image-9-C61RwL" data-id="2:237" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-9@2x.png">
+
+<div class="rectangle-1-x5xjB4" data-id="2:213"></div>
+
+
+
+<div class="add-to-cart-HlKRTo font-class-1 border-class-1" data-id="2:214">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-QL5zbd border-class-2" data-id="2:216"></div>
+<img class="minus-HlKRTo" data-id="2:217" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-HlKRTo" data-id="2:218" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-a5WPlX font-class-4 border-class-1" data-id="2:219">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-HlKRTo font-class-1 border-class-1" data-id="2:220">
+ Soft, fluffy, and extra moist creamy vanilla buttercream with extra sprinkles
+    
+</p>
+
+
+
+<div class="title-VkPPtx font-class-3 border-class-1" data-id="2:221">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Pink Vanilla
+    
+</div>
+<img class="image-10-C61RwL" data-id="2:239" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-10@2x.png">
+
+<div class="footer-C61RwL" data-id="940:8">
+
+
+<div class="title-iPe1yZ font-class-3 border-class-1" data-id="4:20">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Misscupcake
+    
+</div>
+
+
+
+<div class="subtitle-iPe1yZ font-class-2 border-class-1" data-id="4:21">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Shop
+    
+</div>
+
+
+
+<div class="subtitle-CMvW9s font-class-2 border-class-1" data-id="4:40">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Suger up your Inbox
+    
+</div>
+
+<div class="rectangle-1-iPe1yZ border-class-4" data-id="4:31"></div>
+<input class="subtitle-edsI20 font-class-2 border-class-1" data-id="4:41" name="subtitle4" placeholder="Email address" type="text">
+
+
+
+<div class="subtitle-ur51bv font-class-2 border-class-1" data-id="4:38">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Our story
+    
+</div>
+
+
+
+<div class="subtitle-wlMi8f font-class-2 border-class-1" data-id="4:39">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Why Miss cupcake
+    
+</div>
+
+
+
+<div class="subtitle-KHn6Qc font-class-2 border-class-1" data-id="4:43">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        MISS CUPCAKES 2020
+    
+</div>
+
+
+
+<div class="subtitle-6UujYQ font-class-2 border-class-1" data-id="4:44">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Privacy policy
+    
+</div>
+
+
+
+<div class="subtitle-6Hvcgn font-class-2 border-class-1" data-id="4:45">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Cookies policy
+    
+</div>
+
+
+
+<div class="subtitle-Yl6O4v font-class-2 border-class-1" data-id="4:46">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Terms of use
+    
+</div>
+<a href="1homepage-1">
+<div class="cta-iPe1yZ" data-id="4:27" data-hotspot-id="hp-3">
+
+
+<div class="send-gOWzxD font-class-1 border-class-1" data-id="4:29">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        SEND
+    
+</div>
+</div></a>
+
+
+
+<div class="x-iPe1yZ font-class-2" data-id="4:42">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ©
+    
+</div>
+</div>
+
+<div class="shopping-cart-C61RwL" data-id="940:2"><a href="4why-miss-cupcake-cart">
+<div class="icon-2NGeg1" data-id="7:273" data-hotspot-id="hp-4">
+<div class="trolley-icon-wbHF6n" data-id="2:55"><img class="vector-3-fsUBdP" data-id="2:50" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/vector-3@2x.png">
+<img class="vector-4-fsUBdP" data-id="2:51" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/vector-4@2x.png">
+<img class="ellipse-2-fsUBdP" data-id="2:52" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/ellipse-2@2x.png">
+<img class="ellipse-3-fsUBdP" data-id="2:53" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/ellipse-2@2x.png">
+</div>
+<img class="ellipse-1-wbHF6n" data-id="2:31" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/ellipse-1@2x.png">
+
+
+
+<div class="x8-wbHF6n font-class-1 border-class-1" data-id="2:56">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        8
+    
+</div>
+</div></a>
+</div>
+
+
+
+<div class="shop-C61RwL font-class-5 border-class-1" data-id="148:363">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Shop
+    
+</div>
+<a href="2our-story-video-map">
+
+
+<div class="our-story-C61RwL font-class-1 border-class-1 anima-smart-layers-pointers " data-id="148:364" data-hotspot-id="hp-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Our story
+    
+</div></a>
+<a href="3why-miss-cupcake">
+
+
+<div class="why-miss-cupcake-C61RwL font-class-1 border-class-1 anima-smart-layers-pointers " data-id="148:365" data-hotspot-id="hp-6">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Why Miss cupcake
+    
+</div></a>
+<img class="image-95-C61RwL bp1-anima-animate-enter1" data-id="148:369" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-95@1x.png">
+
+<div class="rectangle-1-rzkej8" data-id="2:103"></div>
+
+
+
+<div class="add-to-cart-VkPPtx font-class-1 border-class-1" data-id="2:104">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-eCxQ2N border-class-2" data-id="2:106"></div>
+<img class="minus-VkPPtx" data-id="2:107" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-VkPPtx" data-id="2:108" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x3-C61RwL font-class-4 border-class-1" data-id="2:109">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        3
+    
+</div>
+
+
+
+<p class="subtitle-VkPPtx font-class-1 border-class-1" data-id="2:110">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        A chocolate sponge, coloured naturally with beetroot and topped off with cream cheese.
+    
+</p>
+
+
+
+<div class="title-YWzA7M font-class-3 border-class-1" data-id="2:111">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Red Velvet
+    
+</div>
+<img class="image-97-C61RwL" data-id="148:382" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-97@2x.png">
+
+<div class="rectangle-1-dMQSMw" data-id="2:90"></div>
+
+
+
+<div class="add-to-cart-YWzA7M font-class-1 border-class-1" data-id="2:91">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-MGnoC8 border-class-2" data-id="2:93"></div>
+<img class="minus-YWzA7M" data-id="2:97" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-YWzA7M" data-id="2:95" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x1-C61RwL font-class-4 border-class-1" data-id="2:94">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        1
+    
+</div>
+
+
+
+<p class="subtitle-YWzA7M font-class-1 border-class-1" data-id="2:80">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Walnut-studded carrot cake with cinnamon cream cheese frosting
+    
+</p>
+
+
+
+<div class="title-3kIbHG font-class-3 border-class-1" data-id="2:79">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Carrot
+    
+</div>
+<img class="minipartyc-akelarge-2-C61RwL" data-id="148:388" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/mini-party-catering-carrot-cupcake-large-2@2x.png">
+<img class="image-1-C61RwL bp1-anima-animate-enter2" data-id="2:59" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-1@2x.png">
+<img class="image-2-C61RwL bp1-anima-animate-enter3" data-id="2:61" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-2@2x.png">
+
+ </div>
+    </div>
+    
+
+    <div class="anima-container-center-horizontal">
+<div class="x1homepage-tablet border-class-1 anima-screen " data-id="9:434">
+    <img class="bg-C61RwL" data-id="9:1057" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/bg@1x.jpg">
+
+<div class="cupcakes-C61RwL" data-id="944:22">
+
+
+<div class="title1-oLXoxA font-class-3 border-class-1" data-id="9:1090" id="title1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Make your day a little sweeter
+    
+</div>
+<img class="cupcake-1-oLXoxA" data-id="9:1093" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/cupcake-1@2x.png">
+
+<div class="rectangle-1-oLXoxA" data-id="9:1097"></div>
+
+
+
+<div class="add-to-cart-oLXoxA font-class-1 border-class-1" data-id="9:1098">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-x73zuD border-class-2" data-id="9:1100"></div>
+<img class="minus-oLXoxA" data-id="9:1101" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-oLXoxA" data-id="9:1102" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x1-oLXoxA font-class-4 border-class-1" data-id="9:1103">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        1
+    
+</div>
+
+
+
+<p class="subtitle-oLXoxA font-class-1 border-class-1" data-id="9:1104">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Walnut-studded carrot cake with cinnamon cream cheese frosting
+    
+</p>
+
+
+
+<div class="title-oLXoxA font-class-3 border-class-1" data-id="9:1105">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Carrot
+    
+</div>
+<img class="cupcake-2-oLXoxA" data-id="9:1107" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-97@2x.png">
+
+<div class="rectangle-1-0vHbSB" data-id="9:1111"></div>
+
+
+
+<div class="add-to-cart-x73zuD font-class-1 border-class-1" data-id="9:1112">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-QdWehx border-class-2" data-id="9:1114"></div>
+<img class="minus-x73zuD" data-id="9:1115" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-x73zuD" data-id="9:1116" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x3-oLXoxA font-class-4 border-class-1" data-id="9:1117">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        3
+    
+</div>
+
+
+
+<p class="subtitle-x73zuD font-class-1 border-class-1" data-id="9:1118">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        A chocolate sponge, coloured naturally with beetroot and topped off with cream cheese.
+    
+</p>
+
+
+
+<div class="title-x73zuD font-class-3 border-class-1" data-id="9:1119">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Red Velvet
+    
+</div>
+<img class="cupcake-3-oLXoxA" data-id="9:1121" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/cupcake-3@2x.png">
+
+<div class="rectangle-1-Lfp2zP" data-id="9:1125"></div>
+
+
+
+<div class="add-to-cart-0vHbSB font-class-1 border-class-1" data-id="9:1126">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-CrOrZL border-class-2" data-id="9:1128"></div>
+<img class="minus-0vHbSB" data-id="9:1129" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-0vHbSB" data-id="9:1130" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x2-oLXoxA font-class-4 border-class-1" data-id="9:1131">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        2
+    
+</div>
+
+
+
+<p class="subtitle-0vHbSB font-class-1 border-class-1" data-id="9:1132">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Homemade chocolate cupcakes topped with thick &amp; creamy mint chocolate chip frosting.
+    
+</p>
+
+
+
+<div class="title-0vHbSB font-class-3 border-class-1" data-id="9:1133">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Mint Chip
+    
+</div>
+
+<div class="rectangle-1-IXtyn7" data-id="9:1138"></div>
+
+
+
+<div class="add-to-cart-QdWehx font-class-1 border-class-1" data-id="9:1139">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-yJmwS0 border-class-2" data-id="9:1141"></div>
+<img class="minus-QdWehx" data-id="9:1142" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-QdWehx" data-id="9:1143" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-oLXoxA font-class-4 border-class-1" data-id="9:1144">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-QdWehx font-class-1 border-class-1" data-id="9:1145">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        A fluffy strawberry cupcake with strawberry buttercream frosting and chocolate syrup.
+    
+</p>
+
+
+
+<div class="title-QdWehx font-class-3 border-class-1" data-id="9:1146">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Pink strawberry
+    
+</div>
+<img class="image-3-oLXoxA" data-id="9:1147" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-3@2x.png">
+
+<div class="rectangle-1-ZtbLXy" data-id="9:1152"></div>
+
+
+
+<div class="add-to-cart-Lfp2zP font-class-1 border-class-1" data-id="9:1153">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-IIGSqc border-class-2" data-id="9:1155"></div>
+<img class="minus-Lfp2zP" data-id="9:1156" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-Lfp2zP" data-id="9:1157" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-x73zuD font-class-4 border-class-1" data-id="9:1158">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-Lfp2zP font-class-1 border-class-1" data-id="9:1159">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        A super chocolatey cupcake base with a soft marshmallowy buttercream topping.
+    
+</p>
+
+
+
+<div class="title-Lfp2zP font-class-3 border-class-1" data-id="9:1160">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Marshmallow
+    
+</div>
+<img class="image-4-oLXoxA" data-id="9:1161" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-4@2x.png">
+
+<div class="rectangle-1-06dsNt" data-id="9:1166"></div>
+
+
+
+<div class="add-to-cart-CrOrZL font-class-1 border-class-1" data-id="9:1167">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-DqjYqV border-class-2" data-id="9:1169"></div>
+<img class="minus-CrOrZL" data-id="9:1170" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-CrOrZL" data-id="9:1171" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-0vHbSB font-class-4 border-class-1" data-id="9:1172">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-CrOrZL font-class-1 border-class-1" data-id="9:1173">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Belgian chocolate cake with sweet chocolate frosting and cheery.
+    
+</p>
+
+
+
+<div class="title-CrOrZL font-class-3 border-class-1" data-id="9:1174">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Dark Chocolate
+    
+</div>
+<img class="image-5-oLXoxA" data-id="9:1175" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-5@2x.png">
+
+<div class="rectangle-1-ozGh2r" data-id="9:1180"></div>
+
+
+
+<div class="add-to-cart-IXtyn7 font-class-1 border-class-1" data-id="9:1181">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-ngdfk7 border-class-2" data-id="9:1183"></div>
+<img class="minus-IXtyn7" data-id="9:1184" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-IXtyn7" data-id="9:1185" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-QdWehx font-class-4 border-class-1" data-id="9:1186">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-IXtyn7 font-class-1 border-class-1" data-id="9:1187">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Caramel cake with a buttery caramel cream cheese frosting topped with fleur de sel.
+    
+</p>
+
+
+
+<div class="title-IXtyn7 font-class-3 border-class-1" data-id="9:1188">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Salty Caramel
+    
+</div>
+<img class="image-6-oLXoxA" data-id="9:1189" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-6@2x.png">
+
+<div class="rectangle-1-2aa8iP" data-id="9:1194"></div>
+
+
+
+<div class="add-to-cart-yJmwS0 font-class-1 border-class-1" data-id="9:1195">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-jwHZoj border-class-2" data-id="9:1197"></div>
+<img class="minus-yJmwS0" data-id="9:1198" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-yJmwS0" data-id="9:1199" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-Lfp2zP font-class-4 border-class-1" data-id="9:1200">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-yJmwS0 font-class-1 border-class-1" data-id="9:1201">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        A gluten free twist on our classic red velvet, topped off with cream cheese.
+    
+</p>
+
+
+
+<div class="title-yJmwS0 font-class-3 border-class-1" data-id="9:1202">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Gluten Free Velvet
+    
+</div>
+<img class="image-7-oLXoxA" data-id="9:1203" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-7@2x.png">
+
+<div class="rectangle-1-fjXfWc" data-id="9:1208"></div>
+
+
+
+<div class="add-to-cart-ZtbLXy font-class-1 border-class-1" data-id="9:1209">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-bxgjop border-class-2" data-id="9:1211"></div>
+<img class="minus-ZtbLXy" data-id="9:1212" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-ZtbLXy" data-id="9:1213" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-CrOrZL font-class-4 border-class-1" data-id="9:1214">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-ZtbLXy font-class-1 border-class-1" data-id="9:1215">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Lightly spiced buttermilk cake with cinnamon cream cheese frosting with cinnamon sugar.
+    
+</p>
+
+
+
+<div class="title-ZtbLXy font-class-3 border-class-1" data-id="9:1216">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Cinnamon
+    
+</div>
+<img class="image-8-oLXoxA" data-id="9:1217" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-8@2x.png">
+
+<div class="rectangle-1-FfvVCi" data-id="9:1222"></div>
+
+
+
+<div class="add-to-cart-IIGSqc font-class-1 border-class-1" data-id="9:1223">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-echPV0 border-class-2" data-id="9:1225"></div>
+<img class="minus-IIGSqc" data-id="9:1226" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-IIGSqc" data-id="9:1227" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-IXtyn7 font-class-4 border-class-1" data-id="9:1228">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-IIGSqc font-class-1 border-class-1" data-id="9:1229">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        A sweet hazelnut paste with nutella butter cream and chopped hazelnuts on the top.
+    
+</p>
+
+
+
+<div class="title-IIGSqc font-class-3 border-class-1" data-id="9:1230">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Totally nuts
+    
+</div>
+<img class="image-9-oLXoxA" data-id="9:1231" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-9@2x.png">
+
+<div class="rectangle-1-2csvKt" data-id="9:1236"></div>
+
+
+
+<div class="add-to-cart-06dsNt font-class-1 border-class-1" data-id="9:1237">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-6GMOHY border-class-2" data-id="9:1239"></div>
+<img class="minus-06dsNt" data-id="9:1240" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-06dsNt" data-id="9:1241" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-yJmwS0 font-class-4 border-class-1" data-id="9:1242">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-06dsNt font-class-1 border-class-1" data-id="9:1243">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Soft, fluffy, and extra moist creamy vanilla buttercream with extra sprinkles
+    
+</p>
+
+
+
+<div class="title-06dsNt font-class-3 border-class-1" data-id="9:1244">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Pink Vanilla
+    
+</div>
+<img class="image-10-oLXoxA" data-id="9:1245" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-10@2x.png">
+</div>
+<img class="image-53-C61RwL" data-id="9:1255" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-53@1x.png">
+
+<div class="once-upon-a-time-C61RwL" data-id="944:20">
+
+
+<div class="title-3vvDBC font-class-3 border-class-1" data-id="9:1248">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        once upon a time..
+    
+</div>
+
+
+
+<div class="subtitle-3vvDBC font-class-1 border-class-1" data-id="9:1249">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        The art of baking runs deep in our family. Growing up on our family we learned from the best. Our mom was an amazing baker. She not only taught us how to bake, she passed along her values of quality, honesty and integrity.
+    
+</div>
+<a href="2our-story-video-map">
+<div class="cta-3vvDBC" data-id="9:1250" data-hotspot-id="hp-7">
+
+
+<div class="our-story-FflzRv font-class-1 border-class-1" data-id="9:1252">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        OUR STORY
+    
+</div>
+</div></a>
+</div>
+
+<div class="simple-sweet-life-C61RwL" data-id="944:19">
+
+
+<div class="title-VovSfr font-class-3 border-class-1" data-id="9:1082">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        The Simple,Sweet Life
+    
+</div>
+
+
+
+<div class="subtitle-VovSfr font-class-1 border-class-1" data-id="9:1083">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Our cupcakes are always made with the finest ingredients, creating a spark that makes your taste buds dance. You’ll want to indulge in each and every decadent flavor.
+    
+</div>
+<a href="3why-miss-cupcake">
+<div class="cta-VovSfr" data-id="9:1084" data-hotspot-id="hp-8">
+<div class="rectangle-1-08AYX9" data-id="9:1085"></div>
+
+
+
+<div class="why-miss-cupcake-08AYX9 font-class-1 border-class-1" data-id="9:1086">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        WHY MISS CUPCAKE
+    
+</div>
+</div></a>
+<img class="image-54-VovSfr" data-id="9:1257" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-54@2x.png">
+</div>
+
+<div class="miss-cupcake-C61RwL" data-id="944:18">
+
+
+<div class="title-nFlIx9 font-class-3 border-class-1" data-id="9:1067">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Miss cupcake
+    
+</div>
+
+
+
+<div class="subtitle-nFlIx9 font-class-1 border-class-1" data-id="9:1068">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        We are proud to offer cupcakes and cakes that are freshly baked within hours, if not minutes, for your enjoyment.
+    
+</div>
+<a href="#title1">
+<div class="cta-nFlIx9" data-id="9:1069" data-hotspot-id="hp-9">
+
+
+<div class="shop-now-MkKneo font-class-1 border-class-1" data-id="9:1071">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        SHOP NOW
+    
+</div>
+</div></a>
+</div>
+<img class="image-55-C61RwL" data-id="9:1259" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-55@1x.png">
+
+<div class="footer-C61RwL" data-id="944:21">
+
+
+<div class="title-iPe1yZ font-class-3 border-class-1" data-id="9:1261">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Misscupcake
+    
+</div>
+
+
+
+<div class="subtitle-iPe1yZ font-class-2 border-class-1" data-id="9:1262">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Shop
+    
+</div>
+
+
+
+<div class="subtitle-CMvW9s font-class-2 border-class-1" data-id="9:1263">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Suger up your Inbox
+    
+</div>
+
+
+
+<div class="subtitle-edsI20 font-class-2 border-class-1" data-id="9:1264">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Email address
+    
+</div>
+
+
+
+<div class="subtitle-ur51bv font-class-2 border-class-1" data-id="9:1265">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Our story
+    
+</div>
+
+
+
+<div class="subtitle-wlMi8f font-class-2 border-class-1" data-id="9:1266">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Why Miss cupcake
+    
+</div>
+
+
+
+<div class="subtitle-KHn6Qc font-class-2 border-class-1" data-id="9:1268">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Privacy policy
+    
+</div>
+
+
+
+<div class="subtitle-6UujYQ font-class-2 border-class-1" data-id="9:1269">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Cookies policy
+    
+</div>
+
+<div class="rectangle-1-iPe1yZ border-class-4" data-id="9:1274"></div>
+
+
+
+<div class="subtitle-6Hvcgn font-class-2 border-class-1" data-id="9:1267">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        MISS CUPCAKES 2020
+    
+</div>
+
+
+
+<div class="x-iPe1yZ font-class-2" data-id="9:1275">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ©
+    
+</div>
+
+<div class="cta-iPe1yZ" data-id="9:1271"><a href="frame-8">
+
+
+<div class="send-gOWzxD font-class-1 border-class-1" data-id="9:1273" data-hotspot-id="hp-10">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        SEND
+    
+</div></a>
+</div>
+
+
+
+<div class="subtitle-Yl6O4v font-class-2 border-class-1" data-id="9:1270">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Terms of use
+    
+</div>
+</div>
+<a href="4why-miss-cupcake-cart">
+<div class="shopping-cart-C61RwL" data-id="944:17" data-hotspot-id="hp-11"><img class="vector-3-2NGeg1" data-id="114:12" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/vector-3@2x.png">
+<img class="vector-4-2NGeg1" data-id="114:13" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/vector-4@2x.png">
+<img class="ellipse-2-2NGeg1" data-id="114:14" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/ellipse-2@2x.png">
+<img class="ellipse-3-2NGeg1" data-id="114:15" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/ellipse-2@2x.png">
+<img class="ellipse-1-2NGeg1" data-id="114:16" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/ellipse-1@2x.png">
+
+
+
+<div class="x8-2NGeg1 font-class-1 border-class-1" data-id="114:17">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        8
+    
+</div>
+</div></a>
+<a href="2our-story-video-map">
+
+
+<div class="shop-C61RwL font-class-5 border-class-1" data-id="151:1" data-hotspot-id="hp-12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Shop
+    
+</div></a>
+<a href="2our-story-video-map">
+
+
+<div class="our-story-C61RwL font-class-1 border-class-1 anima-smart-layers-pointers " data-id="151:2" data-hotspot-id="hp-13">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Our story
+    
+</div></a>
+<a href="3why-miss-cupcake">
+
+
+<div class="why-miss-cupcake-C61RwL font-class-1 border-class-1 anima-smart-layers-pointers " data-id="151:3" data-hotspot-id="hp-14">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Why Miss cupcake
+    
+</div></a>
+
+ </div>
+    </div>
+    
+
+    <div class="anima-container-center-horizontal">
+<div class="x1homepage-mobile border-class-1 anima-screen " data-id="9:651">
+    
+<div class="cupcakes-C61RwL" data-id="944:51">
+<div class="group-28-oLXoxA" data-id="10:5" id="group-28">
+<div class="text-TNM9gO" data-id="10:6">
+
+
+<div class="title-sSLkFK font-class-3 border-class-1" data-id="10:7">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Make your day a little sweeter
+    
+</div>
+</div>
+</div>
+<img class="cupcake-1-oLXoxA" data-id="10:13" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/cupcake-1-1@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/cupcake-1-1@2x.png">
+
+<div class="rectangle-1-oLXoxA" data-id="10:17"></div>
+
+
+
+<div class="add-to-cart-oLXoxA font-class-1 border-class-1" data-id="10:18">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-x73zuD border-class-2" data-id="10:20"></div>
+<img class="minus-oLXoxA" data-id="10:21" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-oLXoxA" data-id="10:22" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x1-oLXoxA font-class-4 border-class-1" data-id="10:23">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        1
+    
+</div>
+
+
+
+<p class="subtitle-oLXoxA font-class-1 border-class-1" data-id="10:24">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Walnut-studded carrot cake with cinnamon cream cheese frosting
+    
+</p>
+
+
+
+<div class="title-oLXoxA font-class-3 border-class-1" data-id="10:25">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Carrot
+    
+</div>
+<img class="cupcake-2-oLXoxA" data-id="10:28" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/cupcake-2-1@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/cupcake-2-1@2x.png">
+
+<div class="rectangle-1-0vHbSB" data-id="10:32"></div>
+
+
+
+<div class="add-to-cart-x73zuD font-class-1 border-class-1" data-id="10:33">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-QdWehx border-class-2" data-id="10:35"></div>
+<img class="minus-x73zuD" data-id="10:36" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-x73zuD" data-id="10:37" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x3-oLXoxA font-class-4 border-class-1" data-id="10:38">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        3
+    
+</div>
+
+
+
+<p class="subtitle-x73zuD font-class-1 border-class-1" data-id="10:39">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        A chocolate sponge, coloured naturally with beetroot and topped off with cream cheese.
+    
+</p>
+
+
+
+<div class="title-x73zuD font-class-3 border-class-1" data-id="10:40">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Red Velvet
+    
+</div>
+<img class="cupcake-3-oLXoxA" data-id="10:42" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/cupcake-3-2@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/cupcake-3-2@2x.png">
+
+<div class="rectangle-1-Lfp2zP" data-id="10:46"></div>
+
+
+
+<div class="add-to-cart-0vHbSB font-class-1 border-class-1" data-id="10:47">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-CrOrZL border-class-2" data-id="10:49"></div>
+<img class="minus-0vHbSB" data-id="10:50" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-0vHbSB" data-id="10:51" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x2-oLXoxA font-class-4 border-class-1" data-id="10:52">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        2
+    
+</div>
+
+
+
+<p class="subtitle-0vHbSB font-class-1 border-class-1" data-id="10:53">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Homemade chocolate cupcakes topped with thick &amp; creamy mint chocolate chip frosting.
+    
+</p>
+
+
+
+<div class="title-0vHbSB font-class-3 border-class-1" data-id="10:54">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Mint Chip
+    
+</div>
+
+<div class="rectangle-1-IXtyn7" data-id="10:59"></div>
+
+
+
+<div class="add-to-cart-QdWehx font-class-1 border-class-1" data-id="10:60">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-yJmwS0 border-class-2" data-id="10:62"></div>
+<img class="minus-QdWehx" data-id="10:63" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-QdWehx" data-id="10:64" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-oLXoxA font-class-4 border-class-1" data-id="10:65">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-QdWehx font-class-1 border-class-1" data-id="10:66">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        A fluffy strawberry cupcake with strawberry buttercream frosting and chocolate syrup.
+    
+</p>
+
+
+
+<div class="title-QdWehx font-class-3 border-class-1" data-id="10:67">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Pink strawberry
+    
+</div>
+<img class="image-3-oLXoxA" data-id="10:68" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-3-2@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-3-2@2x.png">
+
+<div class="rectangle-1-ZtbLXy" data-id="10:73"></div>
+
+
+
+<div class="add-to-cart-Lfp2zP font-class-1 border-class-1" data-id="10:74">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-IIGSqc border-class-2" data-id="10:76"></div>
+<img class="minus-Lfp2zP" data-id="10:77" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-Lfp2zP" data-id="10:78" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-x73zuD font-class-4 border-class-1" data-id="10:79">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-Lfp2zP font-class-1 border-class-1" data-id="10:80">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        A super chocolatey cupcake base with a soft marshmallowy buttercream topping.
+    
+</p>
+
+
+
+<div class="title-Lfp2zP font-class-3 border-class-1" data-id="10:81">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Marshmallow
+    
+</div>
+<img class="image-4-oLXoxA" data-id="10:82" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-4-2@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-4-2@2x.png">
+
+<div class="rectangle-1-06dsNt" data-id="10:87"></div>
+
+
+
+<div class="add-to-cart-CrOrZL font-class-1 border-class-1" data-id="10:88">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-DqjYqV border-class-2" data-id="10:90"></div>
+<img class="minus-CrOrZL" data-id="10:91" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-CrOrZL" data-id="10:92" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-0vHbSB font-class-4 border-class-1" data-id="10:93">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-CrOrZL font-class-1 border-class-1" data-id="10:94">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Belgian chocolate cake with sweet chocolate frosting and cheery.
+    
+</p>
+
+
+
+<div class="title-CrOrZL font-class-3 border-class-1" data-id="10:95">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Dark Chocolate
+    
+</div>
+<img class="image-5-oLXoxA" data-id="10:96" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-5-2@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-5-2@2x.png">
+
+<div class="rectangle-1-ozGh2r" data-id="10:101"></div>
+
+
+
+<div class="add-to-cart-IXtyn7 font-class-1 border-class-1" data-id="10:102">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-ngdfk7 border-class-2" data-id="10:104"></div>
+<img class="minus-IXtyn7" data-id="10:105" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-IXtyn7" data-id="10:106" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-QdWehx font-class-4 border-class-1" data-id="10:107">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-IXtyn7 font-class-1 border-class-1" data-id="10:108">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Caramel cake with a buttery caramel cream cheese frosting topped with fleur de sel.
+    
+</p>
+
+
+
+<div class="title-IXtyn7 font-class-3 border-class-1" data-id="10:109">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Salty Caramel
+    
+</div>
+<img class="image-6-oLXoxA" data-id="10:110" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-6-2@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-6-2@2x.png">
+
+<div class="rectangle-1-2aa8iP" data-id="10:115"></div>
+
+
+
+<div class="add-to-cart-yJmwS0 font-class-1 border-class-1" data-id="10:116">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-jwHZoj border-class-2" data-id="10:118"></div>
+<img class="minus-yJmwS0" data-id="10:119" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-yJmwS0" data-id="10:120" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-Lfp2zP font-class-4 border-class-1" data-id="10:121">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-yJmwS0 font-class-1 border-class-1" data-id="10:122">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        A gluten free twist on our classic red velvet, topped off with cream cheese.
+    
+</p>
+
+
+
+<div class="title-yJmwS0 font-class-3 border-class-1" data-id="10:123">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Gluten Free Velvet
+    
+</div>
+<img class="image-7-oLXoxA" data-id="10:124" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-7-2@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-7-2@2x.png">
+
+<div class="rectangle-1-fjXfWc" data-id="10:129"></div>
+
+
+
+<div class="add-to-cart-ZtbLXy font-class-1 border-class-1" data-id="10:130">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-bxgjop border-class-2" data-id="10:132"></div>
+<img class="minus-ZtbLXy" data-id="10:133" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-ZtbLXy" data-id="10:134" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-CrOrZL font-class-4 border-class-1" data-id="10:135">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-ZtbLXy font-class-1 border-class-1" data-id="10:136">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Lightly spiced buttermilk cake with cinnamon cream cheese frosting with cinnamon sugar.
+    
+</p>
+
+
+
+<div class="title-ZtbLXy font-class-3 border-class-1" data-id="10:137">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Cinnamon
+    
+</div>
+<img class="image-8-oLXoxA" data-id="10:138" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-8-2@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-8-2@2x.png">
+
+<div class="rectangle-1-FfvVCi" data-id="10:143"></div>
+
+
+
+<div class="add-to-cart-IIGSqc font-class-1 border-class-1" data-id="10:144">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-echPV0 border-class-2" data-id="10:146"></div>
+<img class="minus-IIGSqc" data-id="10:147" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-IIGSqc" data-id="10:148" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-IXtyn7 font-class-4 border-class-1" data-id="10:149">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-IIGSqc font-class-1 border-class-1" data-id="10:150">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        A sweet hazelnut paste with nutella butter cream and chopped hazelnuts on the top.
+    
+</p>
+
+
+
+<div class="title-IIGSqc font-class-3 border-class-1" data-id="10:151">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Totally nuts
+    
+</div>
+<img class="image-9-oLXoxA" data-id="10:152" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-9-2@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-9-2@2x.png">
+
+<div class="rectangle-1-2csvKt" data-id="10:157"></div>
+
+
+
+<div class="add-to-cart-06dsNt font-class-1 border-class-1" data-id="10:158">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ADD TO CART
+    
+</div>
+
+<div class="rectangle-1-6GMOHY border-class-2" data-id="10:160"></div>
+<img class="minus-06dsNt" data-id="10:161" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/minus@2x.png">
+<img class="plus-06dsNt" data-id="10:162" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/plus@2x.png">
+
+
+
+<div class="x0-yJmwS0 font-class-4 border-class-1" data-id="10:163">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        0
+    
+</div>
+
+
+
+<p class="subtitle-06dsNt font-class-1 border-class-1" data-id="10:164">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Soft, fluffy, and extra moist creamy vanilla buttercream with extra sprinkles
+    
+</p>
+
+
+
+<div class="title-06dsNt font-class-3 border-class-1" data-id="10:165">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Pink Vanilla
+    
+</div>
+<img class="image-10-oLXoxA" data-id="10:166" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-10-2@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-10-2@2x.png">
+</div>
+
+<div class="footer-C61RwL" data-id="944:54">
+
+
+<div class="title-iPe1yZ font-class-3 border-class-1" data-id="10:180">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Misscupcake
+    
+</div>
+
+
+
+<div class="subtitle-iPe1yZ font-class-2 border-class-1" data-id="10:182">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Suger up your Inbox
+    
+</div>
+
+
+
+<div class="subtitle-CMvW9s font-class-2 border-class-1" data-id="10:183">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Email address
+    
+</div>
+
+<div class="rectangle-1-iPe1yZ border-class-4" data-id="10:188"></div>
+<a href="frame-8">
+<div class="group-70-iPe1yZ" data-id="10:193" data-hotspot-id="hp-15">
+
+
+<div class="send-SrlJ3S font-class-1 border-class-1" data-id="10:195">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        SEND
+    
+</div>
+</div></a>
+
+
+
+<div class="subtitle-edsI20 font-class-2 border-class-1" data-id="10:181">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Shop
+    
+</div>
+
+
+
+<div class="subtitle-ur51bv font-class-2 border-class-1" data-id="10:184">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Our story
+    
+</div>
+
+
+
+<div class="subtitle-wlMi8f font-class-2 border-class-1" data-id="10:185">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Why Miss cupcake
+    
+</div>
+
+
+
+<div class="subtitle-KHn6Qc font-class-2 border-class-1" data-id="10:186">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Privacy policy
+    
+</div>
+
+
+
+<div class="subtitle-6UujYQ font-class-2 border-class-1" data-id="10:187">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Cookies policy
+    
+</div>
+
+
+
+<div class="subtitle-6Hvcgn font-class-2 border-class-1" data-id="10:197">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Terms of use
+    
+</div>
+
+
+
+<div class="subtitle-Yl6O4v font-class-2 border-class-1" data-id="10:190">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        MISS CUPCAKES 2020
+    
+</div>
+
+
+
+<div class="x-iPe1yZ font-class-2" data-id="10:191">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        ©
+    
+</div>
+</div>
+
+<div class="rectangle-16-C61RwL" data-id="9:1305"></div>
+
+<div class="rectangle-17-C61RwL" data-id="9:1319"></div>
+
+<div class="rectangle-18-C61RwL" data-id="9:1320"></div>
+
+<div class="miss-cupcake-C61RwL" data-id="944:49">
+
+
+<div class="title-nFlIx9 font-class-3 border-class-1" data-id="9:1323">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Miss cupcake
+    
+</div>
+
+
+
+<div class="subtitle-nFlIx9 font-class-1 border-class-1" data-id="9:1324">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        We are proud to offer cupcakes and cakes that are freshly baked within hours, if not minutes, for your enjoyment.
+    
+</div>
+<a href="#group-28">
+<div class="cta-nFlIx9" data-id="9:1325" data-hotspot-id="hp-16">
+<div class="rectangle-1-MkKneo" data-id="9:1326"></div>
+
+
+
+<div class="shop-now-MkKneo font-class-1 border-class-1" data-id="9:1327">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        SHOP NOW
+    
+</div>
+</div></a>
+</div>
+<img class="image-56-C61RwL" data-id="9:1329" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-56@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-56@2x.png">
+
+<div class="simple-life-C61RwL" data-id="944:50" id="simple-life">
+
+
+<div class="title-FVTpyx font-class-3 border-class-1" data-id="9:1332">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        The Simple,Sweet Life
+    
+</div>
+
+
+
+<div class="subtitle-FVTpyx font-class-1 border-class-1" data-id="9:1333">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        Our cupcakes are always made with the finest ingredients, creating a spark that makes your taste buds dance. You’ll want to indulge in each and every decadent flavor.
+    
+</div>
+<a href="3why-miss-cupcake">
+<div class="cta-FVTpyx" data-id="9:1334" data-hotspot-id="hp-17">
+
+
+<div class="why-miss-cupcake-LzCPSL font-class-1 border-class-1" data-id="9:1336">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        WHY MISS CUPCAKE
+    
+</div>
+</div></a>
+</div>
+<img class="image-57-C61RwL" data-id="10:4" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-57@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-57@2x.png">
+
+<div class="once-upon-a-time-C61RwL" data-id="944:52">
+
+
+<div class="title-3vvDBC font-class-3 border-class-1" data-id="10:171">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        once upon a time..
+    
+</div>
+
+
+
+<div class="subtitle-3vvDBC font-class-1 border-class-1" data-id="10:172">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        The art of baking runs deep in our family. Growing up on our family we learned from the best. Our mom was an amazing baker. She not only taught us how to bake, she passed along her values of quality, honesty and integrity.
+    
+</div>
+
+<div class="rectangle-1-3vvDBC" data-id="10:174"></div>
+
+
+
+<div class="our-story-3vvDBC font-class-1 border-class-1" data-id="10:175">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        OUR STORY
+    
+</div>
+<img class="image-58-3vvDBC" data-id="10:178" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-58@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/image-58@2x.png">
+</div>
+<a href="4why-miss-cupcake-cart">
+<div class="shopping-cart-C61RwL" data-id="944:55" data-hotspot-id="hp-18"><img class="vector-3-2NGeg1" data-id="31:957" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/vector-3-2@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/vector-3-2@2x.png">
+<img class="vector-4-2NGeg1" data-id="31:958" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/vector-4-2@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/vector-4-2@2x.png">
+<img class="ellipse-2-2NGeg1" data-id="31:959" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/ellipse-2-2@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/ellipse-2-2@2x.png">
+<img class="ellipse-3-2NGeg1" data-id="31:960" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/ellipse-3-2@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/ellipse-3-2@2x.png">
+<img class="ellipse-1-2NGeg1" data-id="31:961" src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/ellipse-1-2@2x.png" anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f9ee4569505d99fbb2ee1d9/releases/5f9ee7bedcc98ac84403140f/img/ellipse-1-2@2x.png">
+
+
+
+<div class="x8-2NGeg1 font-class-1 border-class-1" data-id="31:962">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        8
+    
+</div>
+</div></a>
+
+ </div>
+    </div>
+    
+    <script src="launchpad-js/launchpad-banner.js" async=""></script>
+    <script defer="" src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script>
+    <script>function AnimaShowOnScroll() {
+    this.toShow = [];
+    this.nextEventY = undefined;
+}
+
+AnimaShowOnScroll.prototype.show = function(e) {
+    e.style.display = "";
+};
+
+AnimaShowOnScroll.prototype.hide = function(e) {
+    e.style.display = "none";
+};
+
+AnimaShowOnScroll.prototype.getTop = function(e) {
+    if (e.AnimaTop != undefined && e.AnimaTop != 0) {
+        return e.AnimaTop;
+    }
+    var top = 0;
+    var iter = e;
+    do {
+        top += iter.offsetTop || 0;
+        iter = iter.offsetParent;
+    } while (iter);
+    e.AnimaTop = top;
+    return top;
+};
+
+AnimaShowOnScroll.prototype.onScroll = function() {
+    var screenBottom = window.pageYOffset + window.innerHeight;
+    if (this.nextEventY == undefined || this.nextEventY > screenBottom) {
+        return;
+    }
+    this.nextEventY = undefined;
+    for (var i = 0; i < this.toShow.length; i++) {
+        var e = this.toShow[i];
+        var top = this.getTop(e);
+        if (top < screenBottom) {
+            this.show(e);
+            this.toShow.shift();
+            i--;
+        } else {
+            this.nextEventY = top;
+            break;
+        }
+    }
+};
+
+AnimaShowOnScroll.prototype.resetScrolling = function() {
+    // Clear state
+    var screenBottom = window.pageYOffset + window.innerHeight;
+    for (var i = 0; i < this.toShow.length; i++) {
+        var e = this.toShow[i];
+        this.show(e);
+    }
+    this.toShow = [];
+    this.nextEventY == undefined;
+
+    // Collect items
+    var itemsToShowOnScroll = Array.prototype.slice.call(document.getElementsByTagName("*"));
+    itemsToShowOnScroll = itemsToShowOnScroll.filter(function(e) { return e.getAttribute("anima-show-on-scroll") != undefined });
+    var getTop = this.getTop;
+    itemsToShowOnScroll.sort(function(a, b) {
+        return getTop(a) - getTop(b);
+    });
+    for (var i = 0; i < itemsToShowOnScroll.length; i++) {
+        var e = itemsToShowOnScroll[i];
+        var top = this.getTop(e);
+        if (top < screenBottom) {
+            continue;
+        }
+        this.toShow.push(e);
+        this.hide(e);
+        this.nextEventY = this.nextEventY != undefined ? this.nextEventY : top;
+    }
+};
+
+AnimaShowOnScroll.prototype.handleEvent = function(e) {
+    switch (e.type) {
+        case "scroll":
+            this.onScroll();
+            break;
+        case "resize":
+            this.resetScrolling();
+            break;
+    }
+};
+
+AnimaShowOnScroll.prototype.init = function() {
+    this.resetScrolling();
+    window.addEventListener("scroll", this);
+    window.addEventListener("resize", this);
+};
+
+// After anima-src
+setTimeout(function() {
+    var instShowOnScroll = new AnimaShowOnScroll();
+    instShowOnScroll.init();
+}, 250);</script>
+
+    <script>AnimaisHidden = function(e) {
+    if (!(e instanceof HTMLElement)) return false;
+    if (getComputedStyle(e).display == "none") return true;
+    else if (e.parentNode && AnimaisHidden(e.parentNode)) return true;
+    return false;
+};
+
+AnimaloadAsyncSrcForTag = function (tag) {
+    var elements = document.getElementsByTagName(tag);
+    var toLoad = [];
+    for (var i = 0; i < elements.length; i++) {
+        var e = elements[i];
+        var src = e.getAttribute("src");
+        var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+        if (loaded) continue;
+        var asyncSrc = e.getAttribute("anima-src");
+        if (asyncSrc == undefined || asyncSrc.length == 0) continue;
+        if (AnimaisHidden(e)) continue;
+        toLoad.push(e);
+    }
+    // Top first
+    toLoad.sort(function(a, b) {return AnimagetTop(a) - AnimagetTop(b)});
+    for (var i = 0; i < toLoad.length; i++) {
+        var e = toLoad[i];
+        var asyncSrc = e.getAttribute("anima-src");
+        e.setAttribute("src", asyncSrc);
+    }
+};
+
+AnimapauseHiddenVideos = function (tag) {
+    var elements = document.getElementsByTagName("video");
+    for (var i = 0; i < elements.length; i++) {
+        var e = elements[i];
+        var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
+        var isHidden  = AnimaisHidden(e);
+        if (!isPlaying && !isHidden && e.getAttribute("autoplay") == "autoplay") {
+            e.play();
+        }
+        else if (isPlaying && isHidden) {
+            e.pause();
+        }
+    }
+};
+
+AnimaloadAsyncSrc = function (tag) {
+    AnimaloadAsyncSrcForTag("img");
+    AnimaloadAsyncSrcForTag("iframe");
+    AnimaloadAsyncSrcForTag("video");
+    AnimapauseHiddenVideos();
+};
+
+var AnimagetTop = function(e) {
+    var top = 0;
+    do {
+        top += e.offsetTop  || 0;
+        e = e.offsetParent;
+    } while(e);
+    return top;
+};
+
+// On load
+AnimaloadAsyncSrc();
+
+// On resize
+Animaold_onResize = window.onresize;
+Animanew_onResize = undefined;
+
+AnimaupdateOnResize = function() {
+    if (Animanew_onResize == undefined ||
+        window.onresize != Animanew_onResize) {
+        Animanew_onResize = function (x) {
+            if (Animaold_onResize != undefined) Animaold_onResize(x);
+            AnimaloadAsyncSrc();
+        }
+        window.onresize = Animanew_onResize;
+        // Make sure not overriden
+        setTimeout(function() {
+            AnimaupdateOnResize();
+        }, 3000);
+     }
+};
+AnimaupdateOnResize();
+
+// IE
+setTimeout(function() {
+    AnimaloadAsyncSrc();
+}, 200);
+</script>
+
+    <!-- V 078e12f Sun Nov  1 11:07:18 UTC 2020 -->
+
+<div class="hotspot" id="hp-0" style="width: 0px; height: 0px; top: 8815px; left: 0px; z-index: -1; opacity: 0;"></div><div class="hotspot" id="hp-1" style="width: 0px; height: 0px; top: 8815px; left: 0px; z-index: -1; opacity: 0;"></div><div class="hotspot" id="hp-2" style="width: 0px; height: 0px; top: 8815px; left: 0px; z-index: -1; opacity: 0;"></div><div class="hotspot" id="hp-3" style="width: 0px; height: 0px; top: 8815px; left: 0px; z-index: -1; opacity: 0;"></div><div class="hotspot" id="hp-4" style="width: 0px; height: 0px; top: 8815px; left: 0px; z-index: -1; opacity: 0;"></div><div class="hotspot" id="hp-5" style="width: 0px; height: 0px; top: 8815px; left: 0px; z-index: -1; opacity: 0;"></div><div class="hotspot" id="hp-6" style="width: 0px; height: 0px; top: 8815px; left: 0px; z-index: -1; opacity: 0;"></div><div class="hotspot" id="hp-7" style="width: 0px; height: 0px; top: 8815px; left: 0px; z-index: -1; opacity: 0;"></div><div class="hotspot" id="hp-8" style="width: 0px; height: 0px; top: 8815px; left: 0px; z-index: -1; opacity: 0;"></div><div class="hotspot" id="hp-9" style="width: 0px; height: 0px; top: 8815px; left: 0px; z-index: -1; opacity: 0;"></div><div class="hotspot" id="hp-10" style="width: 0px; height: 0px; top: 8815px; left: 0px; z-index: -1; opacity: 0;"></div><div class="hotspot" id="hp-11" style="width: 0px; height: 0px; top: 8815px; left: 0px; z-index: -1; opacity: 0;"></div><div class="hotspot" id="hp-12" style="width: 0px; height: 0px; top: 8815px; left: 0px; z-index: -1; opacity: 0;"></div><div class="hotspot" id="hp-13" style="width: 0px; height: 0px; top: 8815px; left: 0px; z-index: -1; opacity: 0;"></div><div class="hotspot" id="hp-14" style="width: 0px; height: 0px; top: 8815px; left: 0px; z-index: -1; opacity: 0;"></div><div class="hotspot" id="hp-15" style="width: 335px; height: 43px; top: 9134px; left: 223.5px; z-index: -1; opacity: 0;"></div><div class="hotspot" id="hp-16" style="width: 206px; height: 43px; top: 400px; left: 221.5px; z-index: -1; opacity: 0;"></div><div class="hotspot" id="hp-17" style="width: 206px; height: 43px; top: 1244px; left: 219.5px; z-index: -1; opacity: 0;"></div><div class="hotspot" id="hp-18" style="width: 34px; height: 35px; top: 13px; left: 524.5px; z-index: -1; opacity: 0;"></div><div class="box-highlight"><div class="box-wrapper"><div class="tag-box"></div></div></div><div class="box-highlight"><div class="box-wrapper"><div class="tag-box"></div></div></div><div id="comment-box" class="comment-box"><div class="comment-box-wrapper"><div class="comment-box-tag"></div></div></div><div id="fixed-comment-box" class="comment-box"><div class="comment-box-wrapper"><div class="comment-box-tag"></div></div></div></body></html>
